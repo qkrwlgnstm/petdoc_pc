@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* _layout.scss */
+.wrap{
+    height: 100%;
+}
+.detail_wrap{
+    .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .container{
+        position: relative;
+        min-height: 100%;
+        padding: 48px 0;
+        @include boxsizing;
+    }
+}

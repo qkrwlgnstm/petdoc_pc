@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* _popup.scss */
+.dimmed{
+    display: none;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index:30;
+    &.show{
+        display:block;
+    }
+}
+.ly_popup{
+    position:absolute;
+    right:12px;
+    bottom: 12px;
+    left:12px;
+    background-color: #fff;
+    box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, 0.24);
+    @include borderadius(8px);
+    z-index:100;
+    .ly_con{
+        padding: 42px 0 0 0;
+        text-align: center;
+        .ly_tit{
+            display: block;
+            margin-bottom: 12px;
+            font-size: 17px;
+            color: #4e5263;
+        }
+        .ly_txt{
+            margin-bottom: 32px;
+            font-size: 15px;
+            color: #4e5263;
+        }
+    }
+    .ly_button_area{
+        border-top: 1px solid #e1e4e6;
+        &:after{
+            @include clear;
+        }
+        a{
+            display: block;
+            float: left;
+            width: 50%;
+            height: 56px;
+            line-height: 56px;
+            @include boxsizing;
+            font-size: 17px;
+            font-weight: bold;
+            color: #475377;
+          
+        }
+        .btn_ly_confirm{
+            color: #ff5a5c;
+            border-left: 1px solid #e1e4e6;
+        }
+    }
+
+}

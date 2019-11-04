@@ -1,0 +1,104 @@
+@charset "UTF-8";
+//common css
+body,
+html{
+    height: 100%;
+}
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+ol,
+li,
+p,
+select,
+table,
+td,
+textarea,
+th,
+ul{
+    margin: 0;
+    padding: 0;
+}
+body,
+input,
+textarea,
+select,
+button,
+table
+{
+    font-family: 'AppleSDGothicNeo',sans-serif, Helvetica;
+    font-size: 14px;
+    line-height: 1.15;
+}
+img,
+fieldset
+{
+    border:0;
+    vertical-align:top;
+}
+ul,
+ol
+{
+    list-style:none;
+}
+em,
+address
+{
+    font-style:normal;
+}
+a{
+    text-decoration:none;
+}
+button {
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: 0;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+}
+.blind{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px
+}
+.today_content_body{
+    background-color: #edeff7;
+}
+.input_text{
+    font-size: 15px;
+    color: #4e5263;
+    &::placeholder{
+        color: #bcc1c8;
+    }
+}

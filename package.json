@@ -1,0 +1,31 @@
+{
+  "name": "dev_task",
+  "version": "1.0.0",
+  "description": "project information",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "group_name",
+  "license": "UNLICENSE",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-csslint": "^1.0.0",
+    "gulp-hint-web-reporter": "^1.1.4",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-jslint": "^1.0.10",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-util": "^3.0.8",
+    "gulp.spritesmith": "^6.9.0",
+    "htmlhint-stylish": "^1.0.3",
+    "jquery": "^3.2.1",
+    "scrollmagic": "^2.0.5"
+  },
+  "dependencies": {}
+}

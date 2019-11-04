@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+// blind
+@mixin blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+@mixin boxsizing {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+@mixin borderadius($r) {
+	-webkit-border-radius: $r;
+	-moz-border-radius: $r;
+	border-radius: $r;
+}
+@mixin opacity($r) {
+	-webkit-opacity: $r;
+	-moz-opacity: $r;
+	opacity: $r;
+}
+@mixin clear{
+	display: block;
+	clear: both;
+	content:''
+}
+@mixin table{
+    width:100%;
+    border-collapse: collapse;
+    border-spacing:0;
+    table-layout:fixed;
+	text-align:center;
+}
+@mixin layout_table{
+	display:table;
+	width:100%;
+    table-layout:fixed;
+    @include boxsizing;
+}
+@mixin layout_table_cell{
+    display:table-cell;
+    @include boxsizing;
+}
+@mixin ellipse{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+@mixin sp_img {
+    display:inline-block;
+    background:url(../img/sp_img.png) 0 0 no-repeat;
+    background-size:173.5px 150px;
+    vertical-align:middle;
+}

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,viewport-fit=cover,user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>홈</title>
+        <link rel="stylesheet" type="text/css" href="css/services.css">
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- [D] 스크롤 시 상단 고정 클래스 fixed_header 추가-->
+            <div class="header main_header ">
+                <!-- [D] 배너 영역 노출 시 show 클래스 추가-->
+                <div class="header_banner show">
+                    <!-- [D] app store 연결 시 주석제거
+                    <a href="https://apps.apple.com/kr/app/펫닥-내-손안에-수의사-소환-실시간-수의사-상담-앱/id1059558618" target="_blank" class="header_banner_area">
+                        <img src="img/top-banner@3x.png" alt="펫닥 앱으로 보기 배너 이미지">
+                    </a>
+                    --> 
+                    <a href="https://play.google.com/store/apps/details?id=kr.co.petdoc.petdoc&hl=ko" target="_blank" class="header_banner_area">
+                        <img src="img/top-banner@3x.png" alt="펫닥 앱으로 보기 배너 이미지">
+                    </a>
+                    <button type="button" class="btn_banner_close">
+                        <span class="blind">배너 닫기 버튼 이미지</span>
+                    </button>
+                </div>
+                <div class="header_inner">
+                    <h1 class="logo_title">
+                        <a href="#" class="spr_ico logo_img">
+                            <span class="blind">pecdot로고 이미지</span>
+                        </a>
+                    </h1>
+                    <button type="button" class="menu_button show">
+                        <span class="blind">햄버거 버튼 이미지</span>
+                    </button>
+                </div>
+                <!-- [D] 햄버거 메뉴 버튼 클릭 시 show 클래스 추가-->
+                <div class="layer_menu">
+                    <!-- [D] 로그인 시 show 클래스 추가 -->
+                    <div class="login_area show">
+                        <button type="button" class="btn_login">
+                            <strong class="login_tit">소셜 로그인</strong>
+                        </button>
+
+                        <div class="login_content">
+                            <!-- 썸네일 이미지 영역 -->
+                            <div class="thumb_img">
+                                <img src="img/common-menu-img-profile.png" alt="유저 썸네일 이미지">
+                            </div>
+                            <!-- // 썸네일 이미지 영역 -->
+                            <div class="login_info_content">
+                                <strong class="username">닉네임닉네임</strong>
+                                <span class="login_account_txt">네이버로 로그인</span>
+                                <button type="button" class="btn_change_information">정보변경</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <ul class="layer_menu_list">
+                        <!-- [D] 메뉴 선택 시 li show 클래스 추가-->
+                        <li class="list_item show">
+                            <a href="#" class="menu_txt">
+                                홈
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#" class="menu_txt">
+                                콘텐츠
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#" class="menu_txt">
+                                펫톡
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social_list">
+                        <li class="list_item">
+                            <a href="https://www.instagram.com/hello_petdoc/?hl=ko" target="_blank" class="menu_txt instagram_menu">
+                                인스타그램
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://www.youtube.com/channel/UCDJ5mikV_sfAvD8n_ZFiTvQ" target="_blank" class="menu_txt youtube_menu">
+                                유튜브
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://www.facebook.com/petdoc1" target="_blank" class="menu_txt facebook_menu">
+                                페이스북
+                            </a>
+                        </li>
+                        <!-- [D]] 로그인 시 show 클래스 추가 -->
+                        <li class="list_item logout_list show">
+                            <button type="button" class="btn_logout">
+                                <span>로그아웃</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <button type="button" class="spr_ico btn_close">
+                        <span class="blind">
+                            레이어 메뉴 닫기 버튼
+                        </span>
+                    </button>
+                    <!-- [D] 소셜 로그인 팝업 노출 시 show 클래스 -->
+                    <div class="dimmed ">
+                        <div class="layer_category">
+                            <div class="login_content">
+                                <strong class="login_tit">소셜 로그인</strong>
+                                <p class="login_txt">다양한 서비스 이용을 위해 로그인해주세요.</p>
+                            </div>
+
+                            <ul class="login_list">
+                                <li class="list_item">
+                                    <a href="#" class="spr_ico login_menu kakao">
+                                        <span class="blind">카카오톡 이미지</span>
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#" class="spr_ico login_menu facebook">
+                                        <span class="blind">페이스북 이미지</span>
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#" class="spr_ico login_menu naver">
+                                        <span class="blind">네이버 이미지</span>
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#" class="spr_ico login_menu google">
+                                        <span class="blind">구글 이미지</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="button_area">
+                                <button type="button" class="btn_close_login">닫기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search_area">
+                    <a href="01_main_search_keyword.html" class="main_search_box">
+                        <span class="spr_ico search_button">
+                            <span class="blind">검색 버튼 이미지</span>
+                        </span>
+                        <p class="main_search_box_txt">검색하실 내용을 입력해 주세요</p>
+                    </a>
+                </div>
+            </div>
+            <div class="container main_container">
+                <div class="content">
+                    <div class="section top_section">
+                        <div class="section_info">
+                            <h2 class="section_title">가을이니까 동반 캠핑가요!</h2>
+                            <a href="#" class="btn_more">
+                                더보기
+                            </a>    
+                        </div>
+                        <div class="content_list">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <!-- 썸네일 이미지 영역 -->
+                                        <div class="thumb_img">
+                                            <img src="img/magazine_img.png" width="294" height="339" alt="썸네일 이미지">
+                                        </div>
+                                        <!-- // 썸네일 이미지 영역 -->
+                                        <div class="slide_top">
+                                            <strong class="top_tit">훈육이 필요할까?</strong>
+                                            <p class="top_txt">우리 아이가 아무거나<br>주워먹는 이유</p>
+                                        </div>
+                                        <div class="slide_bottom">
+                                            <p class="bottom_txt">
+                                                산책만 나가면 바닥에 떨어진 것들을 먹고
+                                                음식물 쓰레기 봉투에서 떨어지지 않으려는…
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <!-- 썸네일 이미지 영역 -->
+                                        <div class="thumb_img">
+                                            <img src="img/magazine_img.png" width="294" height="339" alt="썸네일 이미지">
+                                        </div>
+                                        <!-- // 썸네일 이미지 영역 -->
+                                        <div class="slide_top">
+                                            <strong class="top_tit">훈육이 필요할까?</strong>
+                                            <p class="top_txt">우리 아이가 아무거나<br>주워먹는 이유</p>
+                                        </div>
+                                        <div class="slide_bottom">
+                                            <p class="bottom_txt">
+                                                산책만 나가면 바닥에 떨어진 것들을 먹고
+                                                음식물 쓰레기 봉투에서 떨어지지 않으려는…
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <!-- 썸네일 이미지 영역 -->
+                                        <div class="thumb_img">
+                                            <img src="img/magazine_img.png" width="294" height="339" alt="썸네일 이미지">
+                                        </div>
+                                        <!-- // 썸네일 이미지 영역 -->
+                                        <div class="slide_top">
+                                            <strong class="top_tit">훈육이 필요할까?</strong>
+                                            <p class="top_txt">우리 아이가 아무거나<br>주워먹는 이유</p>
+                                        </div>
+                                        <div class="slide_bottom">
+                                            <p class="bottom_txt">
+                                                산책만 나가면 바닥에 떨어진 것들을 먹고
+                                                음식물 쓰레기 봉투에서 떨어지지 않으려는…
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <!-- 썸네일 이미지 영역 -->
+                                        <div class="thumb_img">
+                                            <img src="img/magazine_img.png" width="294" height="339" alt="썸네일 이미지">
+                                        </div>
+                                        <!-- // 썸네일 이미지 영역 -->
+                                        <div class="slide_top">
+                                            <strong class="top_tit">훈육이 필요할까?</strong>
+                                            <p class="top_txt">우리 아이가 아무거나<br>주워먹는 이유</p>
+                                        </div>
+                                        <div class="slide_bottom">
+                                            <p class="bottom_txt">
+                                                산책만 나가면 바닥에 떨어진 것들을 먹고
+                                                음식물 쓰레기 봉투에서 떨어지지 않으려는…
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <!-- 썸네일 이미지 영역 -->
+                                        <div class="thumb_img">
+                                            <img src="img/magazine_img.png" width="294" height="339" alt="썸네일 이미지">
+                                        </div>
+                                        <!-- // 썸네일 이미지 영역 -->
+                                        <div class="slide_top">
+                                            <strong class="top_tit">훈육이 필요할까?</strong>
+                                            <p class="top_txt">우리 아이가 아무거나<br>주워먹는 이유</p>
+                                        </div>
+                                        <div class="slide_bottom">
+                                            <p class="bottom_txt">
+                                                산책만 나가면 바닥에 떨어진 것들을 먹고
+                                                음식물 쓰레기 봉투에서 떨어지지 않으려는…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>             
+                    <div class="section video_section">
+                        <div class="section_info">
+                            <h2 class="section_title">함께봐요! 좋은 정보</h2>
+                            <a href="#" class="btn_more">
+                                더보기
+                            </a>    
+                        </div>
+                        <div class="content_list">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="video_area_top">
+                                            <div class="video_area">
+                                                <!-- 썸네일 이미지 영역 -->
+                                                <div class="thumb_img">
+                                                    <img src="img/magazine_img.png" width="294" height="163" alt="썸네일 이미지">
+                                                </div>
+                                                <!-- // 썸네일 이미지 영역 -->
+                                                <div class="play_info">
+                                                    <span class="play_time">03:00</span>
+                                                </div>
+                                                <button type="button" class="spr_ico btn_play">
+                                                    <span class="blind">동영상 재생 버튼</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="video_area_bottom">
+                                            <strong class="bottom_tit">
+                                                임산부와 반려동물, 함께해도 괜찮을까?
+                                            </strong>
+                                            <ul class="video_menu_list">
+                                                <li class="list_item">
+                                                    <span class="like_area">
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                                <li class="list_item">
+                                                    <span class="view_area">
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video_area_top">
+                                            <div class="video_area">
+                                                <!-- 썸네일 이미지 영역 -->
+                                                <div class="thumb_img">
+                                                    <img src="img/magazine_img.png" width="294" height="163" alt="썸네일 이미지">
+                                                </div>
+                                                <!-- // 썸네일 이미지 영역 -->
+                                                <div class="play_info">
+                                                    <span class="play_time">03:00</span>
+                                                </div>
+                                                <button type="button" class="spr_ico btn_play">
+                                                    <span class="blind">동영상 재생 버튼</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="video_area_bottom">
+                                            <strong class="bottom_tit">
+                                                임산부와 반려동물, 함께해도 괜찮을까?
+                                            </strong>
+                                            <ul class="video_menu_list">
+                                                <li class="list_item">
+                                                    <span class="like_area">
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                                <li class="list_item">
+                                                    <span class="view_area">
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video_area_top">
+                                            <div class="video_area">
+                                                <!-- 썸네일 이미지 영역 -->
+                                                <div class="thumb_img">
+                                                    <img src="img/magazine_img.png" width="294" height="163" alt="썸네일 이미지">
+                                                </div>
+                                                <!-- // 썸네일 이미지 영역 -->
+                                                <div class="play_info">
+                                                    <span class="play_time">03:00</span>
+                                                </div>
+                                                <button type="button" class="spr_ico btn_play">
+                                                    <span class="blind">동영상 재생 버튼</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="video_area_bottom">
+                                            <strong class="bottom_tit">
+                                                임산부와 반려동물, 함께해도 괜찮을까?
+                                            </strong>
+                                            <ul class="video_menu_list">
+                                                <li class="list_item">
+                                                    <span class="like_area">
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                                <li class="list_item">
+                                                    <span class="view_area">
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video_area_top">
+                                            <div class="video_area">
+                                                <!-- 썸네일 이미지 영역 -->
+                                                <div class="thumb_img">
+                                                    <img src="img/magazine_img.png" width="294" height="163" alt="썸네일 이미지">
+                                                </div>
+                                                <!-- // 썸네일 이미지 영역 -->
+                                                <div class="play_info">
+                                                    <span class="play_time">03:00</span>
+                                                </div>
+                                                <button type="button" class="spr_ico btn_play">
+                                                    <span class="blind">동영상 재생 버튼</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="video_area_bottom">
+                                            <strong class="bottom_tit">
+                                                임산부와 반려동물, 함께해도 괜찮을까?
+                                            </strong>
+                                            <ul class="video_menu_list">
+                                                <li class="list_item">
+                                                    <span class="like_area">
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                                <li class="list_item">
+                                                    <span class="view_area">
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section banner_section">
+                        <div class="section_info">
+                            <h2 class="section_title">이주의 이벤트</h2>
+                        </div>
+                        <ul class="banner_list">
+                            <li class="list_item">
+                                <a href="#" class="banner_area">
+                                    <img src="img/banner@3x.png" alt="펫닷이 말해주는 펫닥 수의사 상담 잘 받는 방법 배너 이미지">
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#" class="banner_area">
+                                    <img src="img/banner-guide@3x.png" alt="내장형 마이크로칩 1만원으로 동물등록하세요! 배너 이미지">
+                                </a>
+                            </li>   
+                            <li class="list_item">
+                                <a href="#" class="banner_area">
+                                    <img src="img/banner@3x.png" alt="펫닷이 말해주는 펫닥 수의사 상담 잘 받는 방법 배너 이미지">
+                                </a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#" class="banner_area">
+                                    <img src="img/banner-guide@3x.png" alt="내장형 마이크로칩 1만원으로 동물등록하세요! 배너 이미지">
+                                </a>
+                            </li>   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer_inner">
+                    <a href="#" class="spr_ico btn_footer_logo">
+                        <span class="blind">푸터 petdoc 로고 이미지</span>
+                    </a>
+                    <ul class="menu_list">
+                        <li class="list_item">
+                            <a href="#">회사소개</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">개인정보 처리방침</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">브이랩</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">브이케어</a>
+                        </li>
+
+                    </ul>
+                    <dl class="company_info">
+                        <dt class="company_info_words">
+                            <span class="blind">회사명</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            (주) 펫닥
+                        </dd>
+                        <dt class="company_info_words">
+                            사업자등록번호 :
+                        </dt>
+                        <dd class="company_info_content">
+                            276 - 81 - 00265
+                        </dd>
+                        <dt class="company_info_words">
+                            대표이사 :
+                        </dt>
+                        <dd class="company_info_content">
+                            최승용
+                        </dd>
+                        <dt class="company_info_words">
+                            개인정보관리책임자 :
+                        </dt>
+                        <dd class="company_info_content">
+                            박정기
+                        </dd>
+                        <dt class="company_info_words">
+                            <span class="blind">회사 주소</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            서울특별시 서초구 강남대로 79길 32 3층 펫닥
+                        </dd>
+                        <dt class="company_info_words">
+                            <span class="blind">회사 전화번호 및 업무시간</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            Tel : 02.6949.3016 월-금 (10:00 - 19:00 )
+                        </dd>
+                        <dt class="company_info_words">
+                            Email :
+                        </dt>
+                        <dd class="company_info_content">
+                            hello@petdoc.co.kr
+                        </dd>
+                        <dt class="company_info_words">
+                            <span class="blind">회사 copyright 문구</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            © 2019 PetDoc Inc. All Rights Reserved.
+                        </dd>
+                    </dl>
+                    <ul class="social_list">
+                        <li class="list_item">
+                            <a href="https://www.instagram.com/hello_petdoc/?hl=ko" target="_blank" class="spr_ico instagram_ico">
+                                <span class="blind">인스타그램 아이콘 이미지</span>
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://www.youtube.com/channel/UCDJ5mikV_sfAvD8n_ZFiTvQ" target="_blank" class="spr_ico youtube_ico">
+                                <span class="blind">유튜브 아이콘 이미지</span>
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://www.facebook.com/petdoc1" target="_blank" class="spr_ico facebook_ico">
+                                <span class="blind">페이스북 아이콘 이미지</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social_list store">
+                        <li class="list_item">
+                            <a href="https://apps.apple.com/kr/app/펫닥-내-손안에-수의사-소환-실시간-수의사-상담-앱/id1059558618" target="_blank" class="spr_ico app_store_ico">
+                                <span class="blind">App 스토어 이미지</span>
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://play.google.com/store/apps/details?id=kr.co.petdoc.petdoc&hl=ko" target="_blank" class="spr_ico google_play_ico">
+                                <span class="blind">구글 플레이 스토어 이미지</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="spr_ico btn_move_top">
+                <span class="blind">상단 이동 버튼 이미지</span>
+            </button>
+            <!-- [D] 레이어 팝업 노출 시 dimmed에 show 클래스 추가 -->
+            <div class="dimmed">
+                <div class="ly_popup">
+                    <div class="ly_con">
+                        <strong class="ly_tit">서비스 안내</strong>
+                        <p class="ly_txt">
+                            회원가입이 필요한 서비스입니다.<br>
+                            앱 스토어로 이동하시겠습니까?
+                        </p>
+                        <div class="ly_button_area">
+                            <a href="#" class="btn_ly_cancle">취소</a>
+                            <!-- [D] App store 이동시 주석 제거
+                                <a href="https://apps.apple.com/kr/app/%ED%8E%AB%EB%8B%A5-%EB%82%B4-%EC%86%90%EC%95%88%EC%97%90-%EC%88%98%EC%9D%98%EC%82%AC-%EC%86%8C%ED%99%98-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EC%88%98%EC%9D%98%EC%82%AC-%EC%83%81%EB%8B%B4-%EC%95%B1/id1059558618" target="_blank" class="btn_ly_confirm">확인</a>
+                            -->
+                            <a href="https://play.google.com/store/apps/details?id=kr.co.petdoc.petdoc&hl=ko" target="_blank" class="btn_ly_confirm">확인</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <!-- [D] 디자인 검수용 js-->
+        <script src="js/markup_test.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 'auto',
+                slidesOffsetBefore: 32,
+                slidesOffsetAfter: 32,
+                spaceBetween: 15,
+                runCallbacksOnInit: true,
+            });
+        </script>
+    </body>
+</html>

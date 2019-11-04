@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* _sprite.scss */
+
+.spr_ico, .btn_more:after, .menu_button:before, .like_area:before, .view_area:before, .btn_search_back:before, .like_area:before, .btn_recommend::before, .menu_txt:before, .btn_home:before, .category_box_area:after, .filter_box_area:after, .like_number_area:before, .btn_youtube:before, .btn_write:before, .btn_close:before, .btn_banner_close:before, .nodata_section:before, .btn_counseling .logo, .btn_counseling .button_text, .btn_counseling .button_text2, .btn_counseling .button_text3, .filter_area .layer_category .category_menu:after, .btn_logout:after, .bookmark_area:before, .btn_bookmark:before{
+    // @include sp_img;
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../img/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 258px 253px;
+    content:'';
+}
