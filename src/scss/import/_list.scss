@@ -2,6 +2,7 @@
 /* _list.scss */
 .top_section{
     .content_list{
+        position: relative;
         height: 443px;
     }
 }
@@ -65,45 +66,61 @@
         @include clear;
     }
 }
-.magazine_list{
-    .magazine_content{
-        display: block;
-        width: 100%;
-        @include borderadius(14px);
-        border: 0.5px solid #e1e4e6;
-    }
-    .thumb_img{
-        position: relative;
-        img{
-            width: 100%;
-            border-top-left-radius: 14px;
-            border-top-right-radius: 14px;
-        }
-    }
-}
-.encyclopedia_list{
-    .encyclopedia_content{
-        display: block;
-        width: 100%;
-        min-height: 220px;
-    }
-    .encyclopedia_content{
-        .thumb_img{
+.keyword_list{
+    padding: 0 12px 12px;
+    .list_item{
+        float: left;
+        margin: 6px 4px;
+        .keyword{
             position: relative;
-            img{
+            display: block;
+            min-width: 48px;
+            height: 36px;
+            padding: 0 8px;
+            line-height: 36px;
+            border: 0.5px solid #fff;
+            @include boxsizing;
+            color: #4e5263;
+            text-align: center;
+            &:before{
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
+                height: 35px;
+                border: 0.5px solid #c9cdd3;
+                @include borderadius(6px);
+                content:'';
             }
         }
     }
-}
-.video_list{
-    .video_area_top{
-        height: 200px;
-    }
-    .video_area{
-        height: 200px;
+    &:after{
+        @include clear;
     }
 }
+.banner_list{
+    margin: 14px -6px 0 0;
+    .list_item{
+        float: left;
+        .banner_area{
+            display: block;
+            width: 222px;
+            height: 97px;    
+            img{
+                width: 100%;
+            }      
+        }
+        +.list_item{
+            margin-left: 10px;
+        }
+    }
+    &:after{
+        @include clear;
+    }
+}
+
+
+
 .encyclopedia_list, .video_list{
     .new_symbol{
         position: absolute;
@@ -228,38 +245,9 @@
         }
     }
 }
-.keyword_list{
-    padding: 0 10.5px;
-    .list_item{
-        float: left;
-        margin: 6px 5.5px;
-        .keyword{
-            position: relative;
-            display: block;
-            min-width: 48px;
-            height: 36px;
-            padding: 0 8px;
-            line-height: 36px;
-            border: 0.5px solid #fff;
-            @include boxsizing;
-            color: #4e5263;
-            text-align: center;
-            &:before{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 35px;
-                border: 0.5px solid #c9cdd3;
-                @include borderadius(6px);
-                content:'';
-            }
-        }
-    }
-    &:after{
-        @include clear;
-    }
-}
+
+
+
 .reply_list{
     .reply_area{
         @include layout_table;

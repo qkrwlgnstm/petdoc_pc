@@ -5,6 +5,7 @@
         <title>홈</title>
         <link rel="stylesheet" type="text/css" href="css/services.css">
         <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sprite.css">
         <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
     </head>
     <body>
@@ -21,7 +22,7 @@
                         <a href="https://play.google.com/store/apps/details?id=kr.co.petdoc.petdoc&hl=ko" target="_blank" class="header_banner_area">
                             <img src="img/topbanner-popup-img@3x.png" width="912" height="70" alt="펫닥 앱으로 보기 배너 이미지">
                         </a>
-                        <button type="button" class="btn_banner_close">
+                        <button type="button" class="common-btn-close">
                             <span class="blind">배너 닫기 버튼 이미지</span>
                         </button>
                     </div>
@@ -29,12 +30,12 @@
                 <div class="header_inner">
                     <div class="header_inner_con">
                         <h1 class="logo_title">
-                            <a href="#" class="spr_ico logo_img">
+                            <a href="#" class="common-gnb-logo">
                                 <span class="blind">pecdot로고 이미지</span>
                             </a>
                         </h1>
                         <ul class="header_menu_list">
-                            <li class="list_item">
+                            <li class="list_item show">
                                 <a href="#" class="menu_txt">홈</a>
                             </li>
                             <li class="list_item">
@@ -45,37 +46,120 @@
                             </li>
                         </ul>
                         <div class="search_box">
-                            <button type="button" class="spr_ico search_button">
+                            <button type="button" class="common-ic-input-search">
                                 <span class="blind">검색 버튼 이미지</span>
                             </button>
-                            <input name="search" type="text" title="검색어 입력" class="input_text" placeholder="" value="양치">
+                            <input name="search" type="text" title="검색어 입력" class="input_text" placeholder="검색하실 내용을 입력해주세요." value="">
+                            <!-- [D] 많이 검색된 검색어 노출시 show 클래스 추가 -->
+                            <div class="keyword_layer show">
+                                <div class="section_info">
+                                    <strong class="section_tit">많이 검색된 검색어</strong>
+                                </div>
+                                <ul class="keyword_list">
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            고양이
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            강아지
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            구토
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            중성화
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            분리불안
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            설사
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            슬개골
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            케어
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            사료
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            눈
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            양치
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            피부
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="login_info">
-                            <button type="button" class="btn_login">
-                                <span>소셜 로그인</span>
-                            </button>
-                            <div class="login_content">
-                                <button type="button" class="btn_login_txt">
-                                    <span class="user_name">집사집사집사집사</span>
+                            <div class="login_button" style="display: none;">
+                                <button type="button" class="btn_login">
+                                    <span>소셜 로그인</span>
                                 </button>
-                                <a href="#" class="login_txt">집사집사집사집사</a>
+                            </div>
+                            <!-- [D] 로그인 시 show 클래스 추가 -->
+                            <div class="login_content" style="display: block;">  
+                                <button type="button" class="btn_login_txt">
+                                    <span class="user_name">집사 00000</span>
+                                    <span class="common-btn-ic-dropdown-mini-none">
+                                        <span class="blind">화살표 이미지</span>
+                                    </span>
+                                </button>
+                                <!-- [D] 유저네임 버튼 클릭시 show 클래스 추가 -->
+                                <div class="logout_layer">
+                                    <button type="button" class="btn_logout">
+                                        <span class="btn_txt">로그아웃</span>
+                                        <span class="common-btn-ic-logout">
+                                            <span class="blind">로그아웃 아이콘 이미지</span>
+                                        </span>
+                                    </button>
+                                </div>
+                                <a href="#" class="login_txt">페이스북으로 로그인</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container main_container">
                 <div class="content">
                     <div class="content_inner">
                         <div class="section top_section">
                             <div class="section_info">
                                 <h2 class="section_title">가을이니까 동반 캠핑가요!</h2>
                                 <a href="#" class="btn_more">
-                                    더보기
+                                    더보기 <span class="common-btn-more"></span>
                                 </a>    
                             </div>
                             <div class="content_list">
-                                <div class="swiper-container">
+                                <div class="swiper-container swiper-container-top">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <!-- 썸네일 이미지 영역 -->
@@ -164,17 +248,19 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-button-prev swipe-btn-left"></div>
+                                <div class="swiper-button-next swipe-btn-right"></div>                                
                             </div>
                         </div>             
                         <div class="section video_section">
                             <div class="section_info">
                                 <h2 class="section_title">함께봐요! 좋은 정보</h2>
                                 <a href="#" class="btn_more">
-                                    더보기
+                                    더보기 <span class="common-btn-more"></span>
                                 </a>    
                             </div>
                             <div class="content_list">
-                                <div class="swiper-container">
+                                <div class="swiper-container swiper-container-video">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="video_area_top">
@@ -187,7 +273,7 @@
                                                     <div class="play_info">
                                                         <span class="play_time">03:00</span>
                                                     </div>
-                                                    <button type="button" class="spr_ico btn_play">
+                                                    <button type="button" class="video-ic-play">
                                                         <span class="blind">동영상 재생 버튼</span>
                                                     </button>
                                                 </div>
@@ -199,11 +285,17 @@
                                                 <ul class="video_menu_list">
                                                     <li class="list_item">
                                                         <span class="like_area">
+                                                            <span class="life-ic-like">
+                                                                <span class="blind">좋아요 이미지</span>
+                                                            </span>
                                                             <span class="number">36</span>
                                                         </span>
                                                     </li>
                                                     <li class="list_item">
                                                         <span class="view_area">
+                                                            <span class="life-ic-view">
+                                                                <span class="blind">view 이미지</span>
+                                                            </span>
                                                             <span class="number">36</span>
                                                         </span>
                                                     </li>
@@ -221,7 +313,7 @@
                                                     <div class="play_info">
                                                         <span class="play_time">03:00</span>
                                                     </div>
-                                                    <button type="button" class="spr_ico btn_play">
+                                                    <button type="button" class="video-ic-play">
                                                         <span class="blind">동영상 재생 버튼</span>
                                                     </button>
                                                 </div>
@@ -233,11 +325,17 @@
                                                 <ul class="video_menu_list">
                                                     <li class="list_item">
                                                         <span class="like_area">
+                                                            <span class="life-ic-like">
+                                                                <span class="blind">좋아요 이미지</span>
+                                                            </span>
                                                             <span class="number">36</span>
                                                         </span>
                                                     </li>
                                                     <li class="list_item">
                                                         <span class="view_area">
+                                                            <span class="life-ic-view">
+                                                                <span class="blind">view 이미지</span>
+                                                            </span>
                                                             <span class="number">36</span>
                                                         </span>
                                                     </li>
@@ -255,7 +353,7 @@
                                                     <div class="play_info">
                                                         <span class="play_time">03:00</span>
                                                     </div>
-                                                    <button type="button" class="spr_ico btn_play">
+                                                    <button type="button" class="video-ic-play">
                                                         <span class="blind">동영상 재생 버튼</span>
                                                     </button>
                                                 </div>
@@ -267,11 +365,17 @@
                                                 <ul class="video_menu_list">
                                                     <li class="list_item">
                                                         <span class="like_area">
+                                                            <span class="life-ic-like">
+                                                                <span class="blind">좋아요 이미지</span>
+                                                            </span>
                                                             <span class="number">36</span>
                                                         </span>
                                                     </li>
                                                     <li class="list_item">
                                                         <span class="view_area">
+                                                            <span class="life-ic-view">
+                                                                <span class="blind">view 이미지</span>
+                                                            </span>
                                                             <span class="number">36</span>
                                                         </span>
                                                     </li>
@@ -314,11 +418,13 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-button-prev swipe-btn-left"></div>
+                                <div class="swiper-button-next swipe-btn-right"></div>     
                             </div>
                         </div>
                         <div class="section banner_section">
                             <div class="section_info">
-                                <h2 class="section_title">이주의 이벤트</h2>
+                                <h2 class="section_title">새로운 소식</h2>
                             </div>
                             <ul class="banner_list">
                                 <li class="list_item">
@@ -348,7 +454,7 @@
             </div>
             <div class="footer">
                 <div class="footer_inner">
-                    <a href="#" class="spr_ico btn_footer_logo">
+                    <a href="#" class="common-footer-img-logo">
                         <span class="blind">푸터 petdoc 로고 이미지</span>
                     </a>
                     <ul class="menu_list">
@@ -421,55 +527,33 @@
                     </dl>
                     <ul class="social_list">
                         <li class="list_item">
-                            <a href="https://www.instagram.com/hello_petdoc/?hl=ko" target="_blank" class="spr_ico instagram_ico">
+                            <a href="https://www.instagram.com/hello_petdoc/?hl=ko" target="_blank" class="common-footer-btn-instagram">
                                 <span class="blind">인스타그램 아이콘 이미지</span>
                             </a>
                         </li>
                         <li class="list_item">
-                            <a href="https://www.youtube.com/channel/UCDJ5mikV_sfAvD8n_ZFiTvQ" target="_blank" class="spr_ico youtube_ico">
+                            <a href="https://www.youtube.com/channel/UCDJ5mikV_sfAvD8n_ZFiTvQ" target="_blank" class="common-footer-btn-youtube">
                                 <span class="blind">유튜브 아이콘 이미지</span>
                             </a>
                         </li>
                         <li class="list_item">
-                            <a href="https://www.facebook.com/petdoc1" target="_blank" class="spr_ico facebook_ico">
+                            <a href="https://www.facebook.com/petdoc1" target="_blank" class="common-footer-btn-facebook">
                                 <span class="blind">페이스북 아이콘 이미지</span>
                             </a>
                         </li>
                     </ul>
                     <ul class="social_list store">
                         <li class="list_item">
-                            <a href="https://apps.apple.com/kr/app/펫닥-내-손안에-수의사-소환-실시간-수의사-상담-앱/id1059558618" target="_blank" class="spr_ico app_store_ico">
+                            <a href="https://apps.apple.com/kr/app/펫닥-내-손안에-수의사-소환-실시간-수의사-상담-앱/id1059558618" target="_blank" class="common-footer-btn-appstore">
                                 <span class="blind">App 스토어 이미지</span>
                             </a>
                         </li>
                         <li class="list_item">
-                            <a href="https://play.google.com/store/apps/details?id=kr.co.petdoc.petdoc&hl=ko" target="_blank" class="spr_ico google_play_ico">
+                            <a href="https://play.google.com/store/apps/details?id=kr.co.petdoc.petdoc&hl=ko" target="_blank" class="common-footer-btn-playstore">
                                 <span class="blind">구글 플레이 스토어 이미지</span>
                             </a>
                         </li>
                     </ul>
-                </div>
-            </div>
-            <button type="button" class="spr_ico btn_move_top">
-                <span class="blind">상단 이동 버튼 이미지</span>
-            </button>
-            <!-- [D] 레이어 팝업 노출 시 dimmed에 show 클래스 추가 -->
-            <div class="dimmed">
-                <div class="ly_popup">
-                    <div class="ly_con">
-                        <strong class="ly_tit">서비스 안내</strong>
-                        <p class="ly_txt">
-                            회원가입이 필요한 서비스입니다.<br>
-                            앱 스토어로 이동하시겠습니까?
-                        </p>
-                        <div class="ly_button_area">
-                            <a href="#" class="btn_ly_cancle">취소</a>
-                            <!-- [D] App store 이동시 주석 제거
-                                <a href="https://apps.apple.com/kr/app/%ED%8E%AB%EB%8B%A5-%EB%82%B4-%EC%86%90%EC%95%88%EC%97%90-%EC%88%98%EC%9D%98%EC%82%AC-%EC%86%8C%ED%99%98-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EC%88%98%EC%9D%98%EC%82%AC-%EC%83%81%EB%8B%B4-%EC%95%B1/id1059558618" target="_blank" class="btn_ly_confirm">확인</a>
-                            -->
-                            <a href="https://play.google.com/store/apps/details?id=kr.co.petdoc.petdoc&hl=ko" target="_blank" class="btn_ly_confirm">확인</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -478,12 +562,27 @@
         <!-- [D] 디자인 검수용 js-->
         <script src="js/markup_test.js"></script>
         <script>
-            var swiper = new Swiper('.swiper-container', {
+            var swiper = new Swiper('.swiper-container-top', {
                 slidesPerView: 'auto',
-                slidesOffsetBefore: 32,
-                slidesOffsetAfter: 32,
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
                 spaceBetween: 15,
                 runCallbacksOnInit: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+            var swiper = new Swiper('.swiper-container-video', {
+                slidesPerView: 'auto',
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
+                spaceBetween: 15,
+                runCallbacksOnInit: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             });
         </script>
     </body>

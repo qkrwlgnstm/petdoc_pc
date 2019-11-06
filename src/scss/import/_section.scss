@@ -3,15 +3,14 @@
 .main_container{
     .section{
         margin-bottom: 32px;
-        .section_info{
-            padding: 0 20px 0 32px;
-        }
         &.video_section{
-            margin-bottom: 12px;
             padding: 0;
             border-bottom: 0;
             .section_info{
                 margin-bottom: 0;
+            }
+            .content_list{
+                position: relative;
             }
             .video_area{
                 overflow: hidden;
@@ -46,6 +45,9 @@
                 }
             }
         }
+        &.banner_section{
+            margin-bottom: 100px;
+        }
     }
 }
 .section{
@@ -53,10 +55,27 @@
         position: relative;
         .section_title{
             padding-right: 70px;
-            font-size: 18px;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.4px;
             color: #4e5263;
             @include ellipse;
         }
+        .btn_more{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: #8d95a0;
+            .common-btn-more{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                vertical-align: -3px;
+            }
+        }
+    }
+    &.top_section{
+        margin-top: 54px;
     }
     &.nodata_section{
         position: absolute;

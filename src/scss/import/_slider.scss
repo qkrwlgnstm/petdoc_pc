@@ -35,14 +35,16 @@
             -moz-border-top-right-radius: 14px;
             .top_tit{
                 display: block;
-                margin-bottom: 10px;
+                margin-bottom: 8px;
                 color: rgba(0, 0, 0, 0.4);
             }
             .top_txt{
-                font-weight: bold;
+                font-weight: 700;
                 font-size: 20px;
-                line-height: 1.15;
+                line-height: 1.25;
+                letter-spacing: -0.4px;
                 color: rgba(0, 0, 0, 0.7);
+              
             }
         }
         .slide_bottom{
@@ -58,11 +60,11 @@
             -moz-border-bottom-right-radius: 14px;
             .bottom_txt{
                 display:-webkit-box;
-                -webkit-line-clamp:2;
-                -webkit-box-orient:vertical;
+                // -webkit-line-clamp:2;
+                // -webkit-box-orient:vertical;
                 height:38px;
-                overflow:hidden;
-                text-overflow:ellipsis;
+                // overflow:hidden;
+                // text-overflow:ellipsis;
                 line-height: 1.36;
                 color: #4e5263;
             }
@@ -70,6 +72,27 @@
     }
     .swiper-wrapper{
         padding: 16px 0 20px;
+    }
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+        display: none;
+    }
+    .swipe-btn-left{
+        top: 223px;
+        left: -27px;
+        width: 46px;
+        height: 46px;
+        &:after{
+            display: none;
+        }
+    }
+    .swipe-btn-right{
+        top: 223px;
+        right: -27px;
+        width: 46px;
+        height: 46px;
+        &:after{
+            display: none;
+        }
     }
 }
 .tab_area.swiper-container{
@@ -86,7 +109,7 @@
 
 .video_section{
     .swiper-slide{
-        height: 243px;
+        height: 248px;
         background-color: #fff;
     }
     .video_area_top{
@@ -115,26 +138,35 @@
             padding: 0 4px;
             @include borderadius(2px);
             background-color: rgba(78, 82, 99, 0.9);
-            line-height: 18px;
+            line-height: 16px;
+            z-index: 10;
+        }
+        .video-ic-play{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            width: 34px;
+            height: 39px;
             z-index: 10;
         }
         .play_time{
-            font-family: SFProText;
+            font-family: Roboto;
             font-size: 11px;
             color: #fff;
-            height: 18px;
-            display: inline-block;
-            padding-top: 1px;
-            vertical-align: top;        
         }
     }
     .video_area_bottom{
-        padding: 14.5px 20px 24px;
+        padding: 16px 20px 24px;
         @include boxsizing;
         .bottom_tit{
             display: block;
             margin-bottom: 3px;
-            color: #4e5263;  
+            line-height: 1.53;
+            letter-spacing: -0.4px;
+            color: #4e5263;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
@@ -156,30 +188,36 @@
                 margin-left: 4px;
                 font-family: Helvetica;
                 font-size: 13px;
-                font-weight: bold;
+                font-weight: 700;
                 color: #4e5263;
-                vertical-align: -4px;
+                vertical-align: middle;
             }
         }
         .like_area{
-            &:before{
-                width: 17px;
-                height: 17px;
-                background-position: 55.416666666666664% 51.06382978723404%;
-                vertical-align: -8px;
+            .life-ic-like{
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                vertical-align: middle;
             }
         }
         .view_area{
-            &:before{
-                width: 17px;
-                height: 17px;
-                background-position: 52.083333333333336% 96.295745%;
-                vertical-align: -8px;
+            .life-ic-view{
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                vertical-align: middle;
             }
         }
         &:after{
             @include clear;
         }
+    }
+    .swipe-btn-left{
+        top: 143px;
+    }
+    .swipe-btn-right{
+        top: 143px;
     }
 }
 .counseling_section{
