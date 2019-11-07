@@ -59,12 +59,8 @@
             -webkit-border-bottom-right-radius: 14px;
             -moz-border-bottom-right-radius: 14px;
             .bottom_txt{
-                display:-webkit-box;
-                // -webkit-line-clamp:2;
-                // -webkit-box-orient:vertical;
                 height:38px;
-                // overflow:hidden;
-                // text-overflow:ellipsis;
+                overflow:hidden;
                 line-height: 1.36;
                 color: #4e5263;
             }
@@ -76,7 +72,7 @@
     .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
         display: none;
     }
-    .swipe-btn-left{
+    .swipe-btn-left, .swipe-btn-left2{
         top: 223px;
         left: -27px;
         width: 46px;
@@ -85,7 +81,7 @@
             display: none;
         }
     }
-    .swipe-btn-right{
+    .swipe-btn-right, .swipe-btn-right2{
         top: 223px;
         right: -27px;
         width: 46px;
@@ -178,7 +174,7 @@
         .list_item{
             float: left;
             +.list_item{
-                margin-left: 7px;
+                margin-left: 12px;
             }
             span{
                 font-size: 0;
@@ -213,25 +209,37 @@
             @include clear;
         }
     }
-    .swipe-btn-left{
+    .swipe-video-btn-left{
         top: 143px;
+        left: -27px;
+        width: 46px;
+        height: 46px;
+        &:after{
+            display: none;
+        }
     }
-    .swipe-btn-right{
+    .swipe-video-btn-right{
         top: 143px;
+        right: -27px;
+        width: 46px;
+        height: 46px;
+        &:after{
+            display: none;
+        }
     }
 }
 .counseling_section{
     .swiper-slide{
-        width: 138px;
-        height: 178px;
+        width: 174px;
+        height: 226px;
         @include borderadius(14px);
         box-shadow: 1px 1px 8px 0 rgba(141, 149, 160, 0.15);
         background-color: #fff;
     }
     .counseling_content{
         display: block;
-        padding: 14px 14px 41px;
-        min-height: 178px;
+        height: 226px;
+        padding: 14px 14px 9px;
         @include boxsizing;
         .counseling_day{
             display: block;
@@ -243,14 +251,13 @@
             }
         }
         .counseling_txt{
-            max-height: 92px;
+            max-height: 147px;
             font-size: 15px;
-            color: #4e5263;
-            display:-webkit-box;
-            -webkit-line-clamp:5;
-            -webkit-box-orient:vertical;
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: -0.4px;
+            color: #4e5263;          
             overflow:hidden;
-            text-overflow:ellipsis;
             .new_symbol{
                 display: inline-block;
                 height: 17px;
@@ -272,24 +279,31 @@
         }
         .recommend_area{
             position: absolute;
-            bottom: 21px;
-            left: 14px;         
+            bottom: 14px;
+            left: 12px;         
             .btn_recommend{
-                font-size: 12px;
+                font-size: 0;
                 color: #8d95a0;
-                &:before{
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 3px;
-                    background-position: 43.881856540084385% 97.544828%;
-                    vertical-align: -6px;
+                .common-ic-recommend{
+                    display: inline-block;
+                    width: 21px;
+                    height: 21px;
+                    margin-right: 4px;
+                    vertical-align: middle;
                 }
                 em{
-                    vertical-align: -1px;
+                    margin-right: 4px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    vertical-align: middle;
+                    letter-spacing: -0.4px;
                 }
                 .number{
                     font-family: Helvetica;
-                    vertical-align: -1px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    vertical-align: middle;
+                    letter-spacing: -0.4px;
                 }
             }
         }

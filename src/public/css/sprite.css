@@ -421,7 +421,7 @@
 	height: 34px;
 }
 
-.swipe-btn-left {
+.swipe-btn-left, .swipe-video-btn-left, .swipe-btn-left2 {
 	background: url("../img/sprite.svg") 90% 50.79365079365079% no-repeat;
 }
 
@@ -430,7 +430,7 @@
 	height: 46px;
 }
 
-.swipe-btn-right {
+.swipe-btn-right, .swipe-video-btn-right, .swipe-btn-right2 {
 	background: url("../img/sprite.svg") 98.0701754385965% 50.79365079365079% no-repeat;
 }
 

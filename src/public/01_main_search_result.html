@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>홈_통합검색_결과</title>
+        <link rel="stylesheet" type="text/css" href="css/services.css">
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sprite.css">
+        <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <div class="header_inner">
+                    <div class="header_inner_con">
+                        <h1 class="logo_title">
+                            <a href="#" class="common-gnb-logo">
+                                <span class="blind">pecdot로고 이미지</span>
+                            </a>
+                        </h1>
+                        <ul class="header_menu_list">
+                            <li class="list_item show">
+                                <a href="#" class="menu_txt">홈</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">콘텐츠</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">펫톡</a>
+                            </li>
+                        </ul>
+                        <div class="search_box">
+                            <button type="button" class="common-ic-input-search">
+                                <span class="blind">검색 버튼 이미지</span>
+                            </button>
+                            <input name="search" type="text" title="검색어 입력" class="input_text" placeholder="" value="양치">
+                            <!-- [D] 많이 검색된 검색어 노출시 show 클래스 추가 -->
+                            <div class="keyword_layer ">
+                                <div class="section_info">
+                                    <strong class="section_tit">많이 검색된 검색어</strong>
+                                </div>
+                                <ul class="keyword_list">
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            고양이
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            강아지
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            구토
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            중성화
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            분리불안
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            설사
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            슬개골
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            케어
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            사료
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            눈
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            양치
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            피부
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- [D] 자동완성 레이어 노출시 show 클래스 추가 -->
+                            <ul class="autocomplet_list ">
+                                <li class="list_item">
+                                    <a href="#" class="autocomplet_keyword_area">
+                                        <strong class="point_txt">양치</strong>
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#" class="autocomplet_keyword_area">
+                                        <strong class="point_txt">양치</strong>하는 방법
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#" class="autocomplet_keyword_area">
+                                        고양이<strong class="point_txt">양치</strong>
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#" class="autocomplet_keyword_area">
+                                        강아지<strong class="point_txt">양치</strong>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- [D] 로그인 시 show 클래스 추가 -->
+                        <div class="login_info ">
+                            <div class="login_button">
+                                <button type="button" class="btn_login">
+                                    <span>소셜 로그인</span>
+                                </button>
+                            </div>
+                            <div class="login_content">  
+                                <button type="button" class="btn_login_txt">
+                                    <span class="user_name">집사 00000</span>
+                                    <span class="common-btn-ic-dropdown-mini-none">
+                                        <span class="blind">화살표 이미지</span>
+                                    </span>
+                                </button>
+                                <!-- [D] 유저네임 버튼 클릭시 show 클래스 추가 -->
+                                <div class="logout_layer ">
+                                    <button type="button" class="btn_logout">
+                                        <span class="btn_txt">로그아웃</span>
+                                        <span class="common-btn-ic-logout">
+                                            <span class="blind">로그아웃 아이콘 이미지</span>
+                                        </span>
+                                    </button>
+                                </div>
+                                <a href="#" class="login_txt">페이스북으로 로그인</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container ">
+                <div class="content">
+                    <div class="content_inner">
+                        <div class="section counseling_section">
+                            <div class="section_info">
+                                <h2 class="section_title">상담</h2>
+                                <a href="#" class="btn_more">
+                                    더보기 <span class="common-btn-more"></span>
+                                </a>       
+                            </div>
+                            <div class="content_list">
+                                <div class="swiper-container counseling swiper-container-initialized swiper-container-horizontal">
+                                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(16px, 0px, 0px);">
+                                        <div class="swiper-slide swiper-slide-active" style="margin-right: 10px;">
+                                            <a href="#" class="counseling_content">
+                                                <span class="counseling_day">
+                                                    <span class="number">2019</span>년 <span class="number">4</span>월 <span class="number">1</span>일
+                                                </span>
+                                                <p class="counseling_txt">
+                                                    <!-- NEW 심볼 영역 -->
+                                                    <span class="new_symbol">NEW</span>
+                                                    <!-- // NEW 심볼 영역 -->
+                                                    강아지가 <strong class="point_txt">치킨</strong> 강아지가 치킨뼈를 먹었어요 조금이긴 하지만 위험하다고 들어서요
+                                                    지금 병원에 갈 수 없는데
+                                                    다른 조치방법이 없을까요? 다른 조치방법이 없을까요?
+                                                </p>
+                                                <div class="recommend_area">
+                                                    <span class="btn_recommend">
+                                                        <span class="common-ic-recommend">
+                                                            <span class="blind">추천 아이콘 이미지</span>
+                                                        </span>
+                                                        <em>추천</em>
+                                                        <span class="number">42</span>
+                                                    </span>
+                                                </div> 
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-next" style="margin-right: 10px;">
+                                            <a href="#" class="counseling_content">
+                                                <span class="counseling_day">
+                                                    <span class="number">2019</span>년 <span class="number">4</span>월 <span class="number">1</span>일
+                                                </span>
+                                                <p class="counseling_txt">
+                                                    강아지가 치킨 뼈를 먹었어요 아주 조금이긴 하지만 위험하다고 들어서요 지금 병원에
+                                                </p>
+                                                <div class="recommend_area">
+                                                    <span class="btn_recommend">
+                                                        <span class="common-ic-recommend">
+                                                            <span class="blind">추천 아이콘 이미지</span>
+                                                        </span>
+                                                        <em>추천</em>
+                                                        <span class="number">42</span>
+                                                    </span>
+                                                </div> 
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide" style="margin-right: 10px;">
+                                            <a href="#" class="counseling_content">
+                                                <span class="counseling_day">
+                                                    <span class="number">2019</span>년 <span class="number">4</span>월 <span class="number">1</span>일
+                                                </span>
+                                                <p class="counseling_txt">
+                                                    강아지가 치킨 뼈를 먹었어요 아주 조금이긴 하지만 위험하다고 들어서요 지금 병원에
+                                                </p>
+                                                <div class="recommend_area">
+                                                    <span class="btn_recommend">
+                                                        <span class="common-ic-recommend">
+                                                            <span class="blind">추천 아이콘 이미지</span>
+                                                        </span>
+                                                        <em>추천</em>
+                                                        <span class="number">42</span>
+                                                    </span>
+                                                </div> 
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide" style="margin-right: 10px;">
+                                            <a href="#" class="counseling_content">
+                                                <span class="counseling_day">
+                                                    <span class="number">2019</span>년 <span class="number">4</span>월 <span class="number">1</span>일
+                                                </span>
+                                                <p class="counseling_txt">
+                                                    강아지가 치킨 뼈를 먹었어요 아주 조금이긴 하지만 위험하다고 들어서요 지금 병원에
+                                                </p>
+                                                <div class="recommend_area">
+                                                    <span class="btn_recommend">
+                                                        <span class="common-ic-recommend">
+                                                            <span class="blind">추천 아이콘 이미지</span>
+                                                        </span>
+                                                        <em>추천</em>
+                                                        <span class="number">42</span>
+                                                    </span>
+                                                </div> 
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide" style="margin-right: 10px;">
+                                            <a href="#" class="counseling_content">
+                                                <span class="counseling_day">
+                                                    <span class="number">2019</span>년 <span class="number">4</span>월 <span class="number">1</span>일
+                                                </span>
+                                                <p class="counseling_txt">
+                                                    강아지가 치킨 뼈를 먹었어요 아주 조금이긴 하지만 위험하다고 들어서요 지금 병원에
+                                                </p>
+                                                <div class="recommend_area">
+                                                    <span class="btn_recommend">
+                                                        <span class="common-ic-recommend">
+                                                            <span class="blind">추천 아이콘 이미지</span>
+                                                        </span>
+                                                        <em>추천</em>
+                                                        <span class="number">42</span>
+                                                    </span>
+                                                </div> 
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide" style="margin-right: 10px;">
+                                            <a href="#" class="counseling_content">
+                                                <span class="counseling_day">
+                                                    <span class="number">2019</span>년 <span class="number">4</span>월 <span class="number">1</span>일
+                                                </span>
+                                                <p class="counseling_txt">
+                                                    강아지가 치킨 뼈를 먹었어요 아주 조금이긴 하지만 위험하다고 들어서요 지금 병원에
+                                                </p>
+                                                <div class="recommend_area">
+                                                    <span class="btn_recommend">
+                                                        <span class="common-ic-recommend">
+                                                            <span class="blind">추천 아이콘 이미지</span>
+                                                        </span>
+                                                        <em>추천</em>
+                                                        <span class="number">42</span>
+                                                    </span>
+                                                </div> 
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide" style="margin-right: 10px;">
+                                            <a href="#" class="counseling_content">
+                                                <span class="counseling_day">
+                                                    <span class="number">2019</span>년 <span class="number">4</span>월 <span class="number">1</span>일
+                                                </span>
+                                                <p class="counseling_txt">
+                                                    강아지가 치킨 뼈를 먹었어요 아주 조금이긴 하지만 위험하다고 들어서요 지금 병원에
+                                                </p>
+                                                <div class="recommend_area">
+                                                    <span class="btn_recommend">
+                                                        <span class="common-ic-recommend">
+                                                            <span class="blind">추천 아이콘 이미지</span>
+                                                        </span>
+                                                        <em>추천</em>
+                                                        <span class="number">42</span>
+                                                    </span>
+                                                </div> 
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide" style="margin-right: 10px;">
+                                            <a href="#" class="counseling_content">
+                                                <span class="counseling_day">
+                                                    <span class="number">2019</span>년 <span class="number">4</span>월 <span class="number">1</span>일
+                                                </span>
+                                                <p class="counseling_txt">
+                                                    강아지가 치킨 뼈를 먹었어요 아주 조금이긴 하지만 위험하다고 들어서요 지금 병원에
+                                                </p>
+                                                <div class="recommend_area">
+                                                    <span class="btn_recommend">
+                                                        <span class="common-ic-recommend">
+                                                            <span class="blind">추천 아이콘 이미지</span>
+                                                        </span>
+                                                        <em>추천</em>
+                                                        <span class="number">42</span>
+                                                    </span>
+                                                </div> 
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide" style="margin-right: 10px;">
+                                            <a href="#" class="counseling_content">
+                                                <span class="counseling_day">
+                                                    <span class="number">2019</span>년 <span class="number">4</span>월 <span class="number">1</span>일
+                                                </span>
+                                                <p class="counseling_txt">
+                                                    강아지가 치킨 뼈를 먹었어요 아주 조금이긴 하지만 위험하다고 들어서요 지금 병원에
+                                                </p>
+                                                <div class="recommend_area">
+                                                    <span class="btn_recommend">
+                                                        <span class="common-ic-recommend">
+                                                            <span class="blind">추천 아이콘 이미지</span>
+                                                        </span>
+                                                        <em>추천</em>
+                                                        <span class="number">42</span>
+                                                    </span>
+                                                </div> 
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide" style="margin-right: 10px;">
+                                            <a href="#" class="counseling_content">
+                                                <span class="counseling_day">
+                                                    <span class="number">2019</span>년 <span class="number">4</span>월 <span class="number">1</span>일
+                                                </span>
+                                                <p class="counseling_txt">
+                                                    강아지가 치킨 뼈를 먹었어요 아주 조금이긴 하지만 위험하다고 들어서요 지금 병원에
+                                                </p>
+                                                <div class="recommend_area">
+                                                    <span class="btn_recommend">
+                                                        <span class="common-ic-recommend">
+                                                            <span class="blind">추천 아이콘 이미지</span>
+                                                        </span>
+                                                        <em>추천</em>
+                                                        <span class="number">42</span>
+                                                    </span>
+                                                </div> 
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                </div>
+                                <div class="swiper-button-prev swipe-btn-left"></div>
+                                <div class="swiper-button-next swipe-btn-right"></div>  
+                            </div>
+                        </div>
+                        <div class="section encyclopedia_section">
+                            <div class="section_info">
+                                <h2 class="section_title">반려백과</h2>
+                                <a href="#" class="btn_more">
+                                    더보기 <span class="common-btn-more"></span>
+                                </a>      
+                            </div>
+                            <div class="content_list">
+                                <ul class="card_list encyclopedia_list">
+                                    <li class="list_item">
+                                        <a href="#" class="encyclopedia_content encyclopedia_content1">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_img">
+                                                <img src="img/card-bg@3x.png" width="216" height="216" alt="썸네일 이미지">
+                                                <!-- NEW 심볼 영역 -->
+                                                <span class="common-thumb-ic-new">NEW</span>
+                                                <!-- // NEW 심볼 영역 -->
+                                                <span class="like_area">
+                                                    <span class="common-ic-thumnail-like">
+                                                        <span class="blind">좋아요 하트 이미지</span>
+                                                    </span>
+                                                    <span class="number">36</span>
+                                                </span>
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="content_info">
+                                                <strong class="info_tit">외과</strong>
+                                                <p class="info_txt">고양이 <strong class="point_txt">피부</strong> 관리법! 그 모든것</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="encyclopedia_content encyclopedia_content2">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_img">
+                                                <img src="img/card-bg@3x.png" width="216" height="216" alt="썸네일 이미지">
+                                                <span class="like_area">
+                                                    <span class="common-ic-thumnail-like">
+                                                        <span class="blind">좋아요 하트 이미지</span>
+                                                    </span>
+                                                    <span class="number">36</span>
+                                                </span>
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="content_info">
+                                                <strong class="info_tit">식사</strong>
+                                                <p class="info_txt">반려견에게 이런 과일을 주세요</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="encyclopedia_content encyclopedia_content3">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_img">
+                                                <img src="img/card-bg@3x.png" width="216" height="216" alt="썸네일 이미지">
+                                                <span class="like_area">
+                                                    <span class="common-ic-thumnail-like">
+                                                        <span class="blind">좋아요 하트 이미지</span>
+                                                    </span>
+                                                    <span class="number">36</span>
+                                                </span>
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="content_info">
+                                                <strong class="info_tit">외과</strong>
+                                                <p class="info_txt">고양이 두고 휴가 가는 방법</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="encyclopedia_content encyclopedia_content4">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_img">
+                                                <img src="img/card-bg@3x.png" width="216" height="216" alt="썸네일 이미지">
+                                                <span class="like_area">
+                                                    <span class="common-ic-thumnail-like">
+                                                        <span class="blind">좋아요 하트 이미지</span>
+                                                    </span>
+                                                    <span class="number">36</span>
+                                                </span>
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="content_info">
+                                                <strong class="info_tit">내과</strong>
+                                                <p class="info_txt">강아지가 소리에 예민해요</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section video_section">
+                            <div class="section_info">
+                                <h2 class="section_title">펫닥TV</h2>
+                                <a href="#" class="btn_more">
+                                    더보기 <span class="common-btn-more"></span>
+                                </a>        
+                            </div>
+                            <div class="content_list">
+                                <ul class="video_list search_video_list">
+                                    <li class="list_item">
+                                        <div class="video_area_top">
+                                            <div class="video_area">
+                                                <!-- NEW 심볼 영역 -->
+                                                <span class="spr_ico new_symbol">NEW</span>
+                                                <!-- // NEW 심볼 영역 -->
+                                                <!-- [D] 유튜브 동영상 영역-->
+                                                <div class="video">
+        
+                                                </div>
+                                                <div class="play_info">
+                                                    <span class="play_time">03:00</span>
+                                                </div>
+                                                <button type="button" class="video-ic-play">
+                                                    <span class="blind">동영상 재생 버튼</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="video_area_bottom">
+                                            <strong class="bottom_tit">
+                                                임산부와 반려동물, 함께해도 괜찮을까?
+                                            </strong>
+                                            <ul class="video_menu_list">
+                                                <li class="list_item">
+                                                    <span class="like_area">
+                                                        <span class="life-ic-like">
+                                                            <span class="blind">좋아요 이미지</span>
+                                                        </span>
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                                <li class="list_item">
+                                                    <span class="view_area">
+                                                        <span class="life-ic-view">
+                                                            <span class="blind">view 이미지</span>
+                                                        </span>
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="list_item">
+                                        <div class="video_area_top">
+                                            <div class="video_area">
+                                                <!-- [D] 유튜브 동영상 영역-->
+                                                <div class="video">
+        
+                                                </div>
+                                                <div class="play_info">
+                                                    <span class="play_time">03:00</span>
+                                                </div>
+                                                <button type="button" class="video-ic-play">
+                                                    <span class="blind">동영상 재생 버튼</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="video_area_bottom">
+                                            <strong class="bottom_tit">
+                                                임산부와 반려동물, 함께해도 괜찮을까?
+                                            </strong>
+                                            <ul class="video_menu_list">
+                                                <li class="list_item">
+                                                    <span class="like_area">
+                                                        <span class="life-ic-like">
+                                                            <span class="blind">좋아요 이미지</span>
+                                                        </span>
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                                <li class="list_item">
+                                                    <span class="view_area">
+                                                        <span class="life-ic-view">
+                                                            <span class="blind">view 이미지</span>
+                                                        </span>
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="list_item">
+                                        <div class="video_area_top">
+                                            <div class="video_area">
+                                                <!-- [D] 유튜브 동영상 영역-->
+                                                <div class="video">
+        
+                                                </div>
+                                                <div class="play_info">
+                                                    <span class="play_time">03:00</span>
+                                                </div>
+                                                <button type="button" class="video-ic-play">
+                                                    <span class="blind">동영상 재생 버튼</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="video_area_bottom">
+                                            <strong class="bottom_tit">
+                                                임산부와 반려동물, 함께해도 괜찮을까?
+                                            </strong>
+                                            <ul class="video_menu_list">
+                                                <li class="list_item">
+                                                    <span class="like_area">
+                                                        <span class="life-ic-like">
+                                                            <span class="blind">좋아요 이미지</span>
+                                                        </span>
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                                <li class="list_item">
+                                                    <span class="view_area">
+                                                        <span class="life-ic-view">
+                                                            <span class="blind">view 이미지</span>
+                                                        </span>
+                                                        <span class="number">36</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section pettok_section">
+                            <div class="section_info">
+                                <h2 class="section_title">펫톡</h2>
+                                <a href="#" class="btn_more">
+                                    더보기 <span class="common-btn-more"></span>
+                                </a>        
+                            </div>
+                            <div class="content_list">
+                                <ul class="pettok_list">
+                                    <li class="list_item">
+                                        <a href="#" class="pettok_area">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_area">
+                                                <img src="img/card-bg@2x.png" alt="썸네일 이미지">
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="pettok_content">
+                                                <p class="content_txt">
+                                                    <!-- NEW 심볼 영역 -->
+                                                    <span class="new_symbol">NEW</span>
+                                                    <!-- // NEW 심볼 영역 -->
+                                                    꾸깃냥
+                                                </p>
+                                                <span class="content_day">
+                                                    <span class="content_info_txt">내일모레</span> <span class="number">5</span>월<span class="number">25</span>일
+                                                </span>
+                                            </div>
+                                            <strong class="reply_area">
+                                                <em class="reply_txt">댓글</em> <span class="number">000</span>
+                                            </strong>
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="pettok_area">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_area">
+                                                <img src="img/card-bg@2x.png" alt="썸네일 이미지">
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="pettok_content">
+                                                <p class="content_txt">꾸깃냥</p>
+                                                <span class="content_day">
+                                                    <span class="content_info_txt">내일모레</span> <span class="number">5</span>월<span class="number">25</span>일
+                                                </span>
+                                            </div>
+                                            <strong class="reply_area">
+                                                <em class="reply_txt">댓글</em> <span class="number">000</span>
+                                            </strong>
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="pettok_area">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_area">
+                                                <img src="img/card-bg@2x.png" alt="썸네일 이미지">
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="pettok_content">
+                                                <p class="content_txt">꾸깃냥</p>
+                                                <span class="content_day">
+                                                    <span class="content_info_txt">내일모레</span> <span class="number">5</span>월<span class="number">25</span>일
+                                                </span>
+                                            </div>
+                                            <strong class="reply_area">
+                                                <em class="reply_txt">댓글</em> <span class="number">000</span>
+                                            </strong>
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="pettok_area">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_area">
+                                                <img src="img/card-bg@2x.png" alt="썸네일 이미지">
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="pettok_content">
+                                                <p class="content_txt">꾸깃냥 <strong class="point_txt">양치</strong></p>
+                                                <span class="content_day">
+                                                    <span class="content_info_txt">내일모레</span> <span class="number">5</span>월<span class="number">25</span>일
+                                                </span>
+                                            </div>
+                                            <strong class="reply_area">
+                                                <em class="reply_txt">댓글</em> <span class="number">000</span>
+                                            </strong>
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="pettok_area">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_area">
+                                                <img src="img/card-bg@2x.png" alt="썸네일 이미지">
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="pettok_content">
+                                                <p class="content_txt">꾸깃냥</p>
+                                                <span class="content_day">
+                                                    <span class="content_info_txt">내일모레</span> <span class="number">5</span>월<span class="number">25</span>일
+                                                </span>
+                                            </div>
+                                            <strong class="reply_area">
+                                                <em class="reply_txt">댓글</em> <span class="number">000</span>
+                                            </strong>
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="pettok_area">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_area">
+                                                <img src="img/card-bg@2x.png" alt="썸네일 이미지">
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="pettok_content">
+                                                <p class="content_txt">꾸깃냥</p>
+                                                <span class="content_day">
+                                                    <span class="content_info_txt">내일모레</span> <span class="number">5</span>월<span class="number">25</span>일
+                                                </span>
+                                            </div>
+                                            <strong class="reply_area">
+                                                <em class="reply_txt">댓글</em> <span class="number">000</span>
+                                            </strong>
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="pettok_area">
+                                            <!-- 썸네일 이미지 영역 -->
+                                            <div class="thumb_area">
+                                                <img src="img/card-bg@2x.png" alt="썸네일 이미지">
+                                            </div>
+                                            <!-- // 썸네일 이미지 영역 -->
+                                            <div class="pettok_content">
+                                                <p class="content_txt">꾸깃냥 <strong class="point_txt">양치</strong></p>
+                                                <span class="content_day">
+                                                    <span class="content_info_txt">내일모레</span> <span class="number">5</span>월<span class="number">25</span>일
+                                                </span>
+                                            </div>
+                                            <strong class="reply_area">
+                                                <em class="reply_txt">댓글</em> <span class="number">000</span>
+                                            </strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer_inner">
+                    <a href="#" class="common-footer-img-logo">
+                        <span class="blind">푸터 petdoc 로고 이미지</span>
+                    </a>
+                    <ul class="menu_list">
+                        <li class="list_item">
+                            <a href="#">회사소개</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">개인정보 처리방침</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">브이랩</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">브이케어</a>
+                        </li>
+
+                    </ul>
+                    <dl class="company_info">
+                        <dt class="company_info_words">
+                            <span class="blind">회사명</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            (주) 펫닥
+                        </dd>
+                        <dt class="company_info_words">
+                            사업자등록번호 :
+                        </dt>
+                        <dd class="company_info_content">
+                            276 - 81 - 00265
+                        </dd>
+                        <dt class="company_info_words">
+                            대표이사 :
+                        </dt>
+                        <dd class="company_info_content">
+                            최승용
+                        </dd>
+                        <dt class="company_info_words">
+                            개인정보관리책임자 :
+                        </dt>
+                        <dd class="company_info_content">
+                            박정기
+                        </dd>
+                        <dt class="company_info_words">
+                            <span class="blind">회사 주소</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            서울특별시 서초구 강남대로 79길 32 3층 펫닥
+                        </dd>
+                        <dt class="company_info_words">
+                            <span class="blind">회사 전화번호 및 업무시간</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            Tel : 02.6949.3016 월-금 (10:00 - 19:00 )
+                        </dd>
+                        <dt class="company_info_words">
+                            Email :
+                        </dt>
+                        <dd class="company_info_content">
+                            hello@petdoc.co.kr
+                        </dd>
+                        <dt class="company_info_words">
+                            <span class="blind">회사 copyright 문구</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            © 2019 PetDoc Inc. All Rights Reserved.
+                        </dd>
+                    </dl>
+                    <ul class="social_list">
+                        <li class="list_item">
+                            <a href="https://www.instagram.com/hello_petdoc/?hl=ko" target="_blank" class="common-footer-btn-instagram">
+                                <span class="blind">인스타그램 아이콘 이미지</span>
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://www.youtube.com/channel/UCDJ5mikV_sfAvD8n_ZFiTvQ" target="_blank" class="common-footer-btn-youtube">
+                                <span class="blind">유튜브 아이콘 이미지</span>
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://www.facebook.com/petdoc1" target="_blank" class="common-footer-btn-facebook">
+                                <span class="blind">페이스북 아이콘 이미지</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social_list store">
+                        <li class="list_item">
+                            <a href="https://apps.apple.com/kr/app/펫닥-내-손안에-수의사-소환-실시간-수의사-상담-앱/id1059558618" target="_blank" class="common-footer-btn-appstore">
+                                <span class="blind">App 스토어 이미지</span>
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://play.google.com/store/apps/details?id=kr.co.petdoc.petdoc&hl=ko" target="_blank" class="common-footer-btn-playstore">
+                                <span class="blind">구글 플레이 스토어 이미지</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="family_site_box">
+                        <button type="button" class="btn_site">
+                            <span class="btn_txt">패밀리 사이트</span>
+                            <span class="common-ic-more-small">
+                                <span class="blind">패밀리 사이트 이동 아이콘 이미지</span>
+                            </span>
+                        </button>
+                        <!-- [D] 패밀리 사이트 레이어 노출 시 show 클래스 추가 -->
+                        <ul class="family_site_layer">
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">펫닥</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">브이랩</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">브이케어</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <!-- [D] 디자인 검수용 js-->
+        <script src="js/markup_test.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 'auto',
+                slidesOffsetBefore: 0.1,
+                slidesOffsetAfter: 0,
+                spaceBetween: 10,
+                runCallbacksOnInit: true,
+                navigation: {
+                    nextEl: '.swipe-btn-right',
+                    prevEl: '.swipe-btn-left',
+                },
+            });
+        </script>
+    </body>
+</html>

@@ -2,7 +2,7 @@
 /* _section.scss */
 .main_container{
     .section{
-        margin-bottom: 32px;
+        margin-bottom: 42px;
         &.video_section{
             padding: 0;
             border-bottom: 0;
@@ -50,9 +50,56 @@
         }
     }
 }
+.theme_list_container{
+    .section{
+        margin-bottom: 47px;
+        .section_info{
+            margin-bottom: 0;
+        }
+    }
+    .page_navi{
+        margin-bottom: 97px;
+        text-align: center;
+        [class*="btn-patination"]{
+            width: 34px;
+            height: 34px;
+        }
+        .number_list{
+            display: inline-block;
+            margin: 9px 17px 0;
+            vertical-align: top;
+            font-size: 0;
+            .list_item{
+                display: inline-block;
+                +.list_item{
+                    margin-left: 23px;
+                }
+                &.on{
+                    .number{
+                        font-weight: 700;
+                        color: #ff5a5c;
+                    }
+                }
+            }
+            .number{
+                font-family: Roboto;
+                font-size: 15px;
+                font-weight: 400;
+                color: #4e5263;
+            }
+        }
+    }
+}
+.content_home_container{
+    .video_section{
+        margin-bottom: 60px;
+    }
+}
 .section{
+    margin: 30px 0 30px;
     .section_info{
         position: relative;
+        margin-bottom: 20px;
         .section_title{
             padding-right: 70px;
             font-size: 24px;
@@ -74,9 +121,50 @@
             }
         }
     }
+    .content_list{
+        position: relative;
+    }
     &.top_section{
         margin-top: 54px;
     }
+    &.counseling_section{
+        height: 335px;
+        margin: 0;
+        padding-top: 30px;
+        @include boxsizing;
+        .section_info{
+            margin-bottom: 0;
+        }
+        &:before{
+            position: absolute;
+            top: 72px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 335px;
+            background-color: #edeff7;
+            content: '';
+        }
+        .swipe-btn-left{
+            top: 128px;
+        }
+        .swipe-btn-right{
+            top: 128px;
+        }
+    }
+    &.encyclopedia_section{
+        margin: 30px 0 38px;
+    }
+    &.pettok_section{
+        margin-bottom: 141px;
+        .pettok_list{
+            border-top: 1px solid #f8f8f8;
+        }
+    }
+
+
+
+
     &.nodata_section{
         position: absolute;
         width: 100%;

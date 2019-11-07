@@ -5,6 +5,23 @@ $(document).ready(function(){
 	$('.common-btn-close').click(function(e){
 		$('.header_banner').removeClass("show");
     })
+    $('.search_box .input_text').click(function(e){
+        $('.keyword_layer').toggleClass("show");
+    })
+    $('.search_box .input_text').keydown(function(e){
+        $('.autocomplet_list').toggleClass("show");
+		$('.keyword_layer').removeClass("show");
+    })
+
+
+
+    $('.btn_site').click(function(e){
+        $('.family_site_layer').toggleClass("show");
+    })
+
+
+
+
     $('.category_box_area').click(function(e){
 		$('.filter_area .dimmed').toggleClass("show");
     })
