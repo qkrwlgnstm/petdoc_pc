@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>콘텐츠홈_상담상세</title>
+        <link rel="stylesheet" type="text/css" href="css/services.css">
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sprite.css">
+        <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <div class="header_inner">
+                    <div class="header_inner_con">
+                        <h1 class="logo_title">
+                            <a href="#" class="common-gnb-logo">
+                                <span class="blind">pecdot로고 이미지</span>
+                            </a>
+                        </h1>
+                        <ul class="header_menu_list">
+                            <li class="list_item ">
+                                <a href="#" class="menu_txt">홈</a>
+                            </li>
+                            <li class="list_item show">
+                                <a href="#" class="menu_txt">콘텐츠</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">펫톡</a>
+                            </li>
+                        </ul>
+                        <div class="search_box">
+                            <button type="button" class="common-ic-input-search">
+                                <span class="blind">검색 버튼 이미지</span>
+                            </button>
+                            <input name="search" type="text" title="검색어 입력" class="input_text" placeholder="검색하실 내용을 입력해주세요." value="">
+                            <!-- [D] 많이 검색된 검색어 노출시 show 클래스 추가 -->
+                            <div class="keyword_layer ">
+                                <div class="section_info">
+                                    <strong class="section_tit">많이 검색된 검색어</strong>
+                                </div>
+                                <ul class="keyword_list">
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            고양이
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            강아지
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            구토
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            중성화
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            분리불안
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            설사
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            슬개골
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            케어
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            사료
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            눈
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            양치
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="#" class="keyword">
+                                            피부
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- [D] 자동완성 레이어 노출시 show 클래스 추가 -->
+                            <ul class="autocomplet_list ">
+                                <li class="list_item">
+                                    <a href="#" class="autocomplet_keyword_area">
+                                        <strong class="point_txt">양치</strong>
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#" class="autocomplet_keyword_area">
+                                        <strong class="point_txt">양치</strong>하는 방법
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#" class="autocomplet_keyword_area">
+                                        고양이<strong class="point_txt">양치</strong>
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#" class="autocomplet_keyword_area">
+                                        강아지<strong class="point_txt">양치</strong>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- [D] 로그인 시 show 클래스 추가 -->
+                        <div class="login_info show">
+                            <div class="login_button">
+                                <button type="button" class="btn_login">
+                                    <span>소셜 로그인</span>
+                                </button>
+                            </div>
+                            <div class="login_content">  
+                                <button type="button" class="btn_login_txt">
+                                    <span class="user_name">집사 00000</span>
+                                    <span class="common-btn-ic-dropdown-mini-none">
+                                        <span class="blind">화살표 이미지</span>
+                                    </span>
+                                </button>
+                                <!-- [D] 유저네임 버튼 클릭시 show 클래스 추가 -->
+                                <div class="logout_layer ">
+                                    <button type="button" class="btn_logout">
+                                        <span class="btn_txt">로그아웃</span>
+                                        <span class="common-btn-ic-logout">
+                                            <span class="blind">로그아웃 아이콘 이미지</span>
+                                        </span>
+                                    </button>
+                                </div>
+                                <a href="#" class="login_txt">페이스북으로 로그인</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="page_info">
+                        <ul class="page_info_list">
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">홈</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">콘텐츠</a>
+                            </li>
+                            <li class="list_item">
+                                <span class="menu_txt">상담</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content_inner">
+                        <div class="section recommend_section">
+                            <div class="recommend_content_info">
+                                <div class="recommend_info">
+                                    <strong class="recommend_tit">상담 반려동물 정보</strong>
+                                </div>
+                                <ul class="recommend_info_list">
+                                    <li class="list_item">
+                                        <span class="list_txt">말티즈</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="list_txt">180803</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="list_txt">여아</span>
+                                    </li>
+                                </ul>
+                                <div class="btn_area">
+                                    <button type="button" class="common-btn-share">
+                                        <span class="blind">공유하기 버튼 이미지</span>
+                                    </button>
+                                    <!-- [D] 추천 버튼 클릭 시 show 클래스 추가 -->
+                                    <button type="button" class="btn_recommend">
+                                        <span class="chat-btn-like-none">
+                                            <span class="blind">추천 이미지</span>
+                                        </span>
+                                        <span>추천하기</span>
+                                    </button>
+                                </div>
+                                <!-- [D] URL 복사하기 레이어 노출 시 show 클래스 추가 -->
+                                <div class="share_layer ">
+                                    <div class="layer_info">
+                                        <strong class="layer_tit"><span>URL</span> 복사하기</strong>
+                                    </div>
+                                    <div class="layer_con">
+                                        <div class="share_box">
+                                            <input type="text" class="input_txt" readonly value="https://www.petdoc-koreaa…">
+                                            <button type="button" class="btn_copy"><span>복사</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="counseling_recommend_area">
+                                <div class="user_txt_area">
+                                    <div class="txt_box">
+                                        <p class="user_txt">
+                                            뭔가,,저희 강아지만 그런건가요?
+                                            갑 자기 조용한 것 같아서 찾아보면
+                                            구 석에서 웅크리고 있는겁니다. 그래서
+                                            다가가서 보니까 똥을 먹고 있...똥...하...어떻해야 할까요? 
+                                        </p>
+                                    </div>
+                                    <span class="txt_time_area">오후 <span class="number">9:55</span></span>
+                                </div>
+                                <div class="counseling_answer_txt_area">
+                                    <div class="thumb_area">
+                                        <img src="img/counseling_thumb_img@2x.png" alt="이태형 원장님 썸네일 이미지">
+                                    </div>
+                                    <div class="counseling_answer_content">
+                                        <div class="counseling_answer_txt">
+                                            <strong class="name_txt">이태형 원장님</strong>
+                                            <div class="txt_area">
+                                                <div class="txt_box">
+                                                    <p class="user_txt">
+                                                        그렇군요.
+                                                    </p>
+                                                </div>
+                                                <span class="txt_time_area">오후 <span class="number">9:55</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user_txt_area">
+                                    <span class="txt_time_area">오후 <span class="number">9:55</span></span>
+                                    <div class="txt_box">
+                                        <p class="user_txt">
+                                            뭔가,,저희 강아지만 그런건가요?
+                                            갑 자기 조용한 것 같아서 찾아보면
+                                            구 석에서 웅크리고 있는겁니다. 그래서
+                                            다가가서 보니까 똥을 먹고 있...똥...하...어떻해야 할까요? 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="counseling_answer_txt_area">
+                                    <div class="thumb_area">
+                                        <img src="img/counseling_thumb_img@2x.png" alt="이태형 원장님 썸네일 이미지">
+                                    </div>
+                                    <div class="counseling_answer_content">
+                                        <div class="counseling_answer_txt">
+                                            <strong class="name_txt">이태형 원장님</strong>
+                                            <div class="txt_area">
+                                                <div class="txt_box">
+                                                    <p class="user_txt">
+                                                        그렇군요그렇군요그렇군요그렇군요그렇군요그렇군요그렇군요그렇군요그렇군요.
+                                                    </p>
+                                                </div>
+                                                <span class="txt_time_area">오후 <span class="number">9:55</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user_txt_area">
+                                    <span class="txt_time_area">오후 <span class="number">9:55</span></span>
+                                    <div class="txt_box">
+                                        <p class="user_txt">
+                                            뭔가,,저희 강아지만 그런건가요?
+                                            갑 자기 조용한 것 같아서 찾아보면
+                                            구 석에서 웅크리고 있는겁니다. 그래서
+                                            다가가서 보니까 똥을 먹고 있...똥...하...어떻해야 할까요? 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="counseling_answer_txt_area">
+                                    <div class="thumb_area">
+                                        <img src="img/counseling_thumb_img@2x.png" alt="이태형 원장님 썸네일 이미지">
+                                    </div>
+                                    <div class="counseling_answer_content">
+                                        <div class="counseling_answer_txt">
+                                            <strong class="name_txt">이태형 원장님</strong>
+                                            <div class="txt_area">
+                                                <div class="txt_box">
+                                                    <p class="user_txt">
+                                                        그렇군요.
+                                                    </p>
+                                                </div>
+                                                <span class="txt_time_area">오후 <span class="number">9:55</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user_txt_area">
+                                    <span class="txt_time_area">오후 <span class="number">9:55</span></span>
+                                    <div class="txt_box">
+                                        <img src="img/test.png" alt="테스트 이미지">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer_inner">
+                    <a href="#" class="common-footer-img-logo">
+                        <span class="blind">푸터 petdoc 로고 이미지</span>
+                    </a>
+                    <ul class="menu_list">
+                        <li class="list_item">
+                            <a href="#">회사소개</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">개인정보 처리방침</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">브이랩</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#">브이케어</a>
+                        </li>
+
+                    </ul>
+                    <dl class="company_info">
+                        <dt class="company_info_words">
+                            <span class="blind">회사명</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            (주) 펫닥
+                        </dd>
+                        <dt class="company_info_words">
+                            사업자등록번호 :
+                        </dt>
+                        <dd class="company_info_content">
+                            276 - 81 - 00265
+                        </dd>
+                        <dt class="company_info_words">
+                            대표이사 :
+                        </dt>
+                        <dd class="company_info_content">
+                            최승용
+                        </dd>
+                        <dt class="company_info_words">
+                            개인정보관리책임자 :
+                        </dt>
+                        <dd class="company_info_content">
+                            박정기
+                        </dd>
+                        <dt class="company_info_words">
+                            <span class="blind">회사 주소</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            서울특별시 서초구 강남대로 79길 32 3층 펫닥
+                        </dd>
+                        <dt class="company_info_words">
+                            <span class="blind">회사 전화번호 및 업무시간</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            Tel : 02.6949.3016 월-금 (10:00 - 19:00 )
+                        </dd>
+                        <dt class="company_info_words">
+                            Email :
+                        </dt>
+                        <dd class="company_info_content">
+                            hello@petdoc.co.kr
+                        </dd>
+                        <dt class="company_info_words">
+                            <span class="blind">회사 copyright 문구</span>
+                        </dt>
+                        <dd class="company_info_content">
+                            © 2019 PetDoc Inc. All Rights Reserved.
+                        </dd>
+                    </dl>
+                    <ul class="social_list">
+                        <li class="list_item">
+                            <a href="https://www.instagram.com/hello_petdoc/?hl=ko" target="_blank" class="common-footer-btn-instagram">
+                                <span class="blind">인스타그램 아이콘 이미지</span>
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://www.youtube.com/channel/UCDJ5mikV_sfAvD8n_ZFiTvQ" target="_blank" class="common-footer-btn-youtube">
+                                <span class="blind">유튜브 아이콘 이미지</span>
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://www.facebook.com/petdoc1" target="_blank" class="common-footer-btn-facebook">
+                                <span class="blind">페이스북 아이콘 이미지</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social_list store">
+                        <li class="list_item">
+                            <a href="https://apps.apple.com/kr/app/펫닥-내-손안에-수의사-소환-실시간-수의사-상담-앱/id1059558618" target="_blank" class="common-footer-btn-appstore">
+                                <span class="blind">App 스토어 이미지</span>
+                            </a>
+                        </li>
+                        <li class="list_item">
+                            <a href="https://play.google.com/store/apps/details?id=kr.co.petdoc.petdoc&hl=ko" target="_blank" class="common-footer-btn-playstore">
+                                <span class="blind">구글 플레이 스토어 이미지</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="family_site_box">
+                        <button type="button" class="btn_site">
+                            <span class="btn_txt">패밀리 사이트</span>
+                            <span class="common-ic-more-small">
+                                <span class="blind">패밀리 사이트 이동 아이콘 이미지</span>
+                            </span>
+                        </button>
+                        <!-- [D] 패밀리 사이트 레이어 노출 시 show 클래스 추가 -->
+                        <ul class="family_site_layer">
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">펫닥</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">브이랩</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#" class="menu_txt">브이케어</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <!-- [D] 디자인 검수용 js-->
+        <script src="js/markup_test.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container-top', {
+                slidesPerView: 'auto',
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
+                spaceBetween: 15,
+                runCallbacksOnInit: true,
+                navigation: {
+                    nextEl: '.swipe-btn-right',
+                    prevEl: '.swipe-btn-left',
+                },
+            });
+            var swiper = new Swiper('.swiper-container-top2', {
+                slidesPerView: 'auto',
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
+                spaceBetween: 15,
+                runCallbacksOnInit: true,
+                navigation: {
+                    nextEl: '.swipe-btn-right2',
+                    prevEl: '.swipe-btn-left2',
+                },
+            });
+        </script>
+    </body>
+</html>

@@ -7,56 +7,99 @@
     right:0;
     bottom:0;
     left:0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index:30;
     &.show{
         display:block;
     }
 }
+
+
+
+
 .ly_popup{
     position:absolute;
-    right:12px;
-    bottom: 12px;
-    left:12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    width: 408px;
+    padding: 53px 59px 50px;
     background-color: #fff;
-    box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, 0.24);
-    @include borderadius(8px);
-    z-index:100;
+    border: 0.5px solid #c9cdd3;
+    z-index:10;
+    @include boxsizing;
     .ly_con{
-        padding: 42px 0 0 0;
-        text-align: center;
+        &.bottom_margin{
+            margin-bottom: 10px;
+        }
         .ly_tit{
             display: block;
-            margin-bottom: 12px;
-            font-size: 17px;
-            color: #4e5263;
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+            color: #303644;          
         }
         .ly_txt{
-            margin-bottom: 32px;
+            margin-bottom: 27px;
             font-size: 15px;
-            color: #4e5263;
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: -0.54px;
+            color: #8d95a0;
+        }
+        .social_list{
+            margin-bottom: 24px;
+            font-size: 0;
+            text-align: center;
+            .list_item{
+                display: inline-block;
+                width: 52px;
+                height: 52px;
+                +.list_item{
+                    margin-left: 21px;
+                }
+            }
+            .social_menu, [class*="login-btn"]{
+                display: inline-block;
+                width: 52px;
+                height: 52px;
+            }
+        }
+        .common-popup-img-qr{
+            display: inline-block;
+            width: 289px;
+            height: 132px;
+        }
+        +.ly_con{
+            padding-top: 29.5px;
+            border-top: 0.5px solid #c9cdd3;
         }
     }
+    .common-btn-close{
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 32px;
+        height: 32px;
+    }
     .ly_button_area{
-        border-top: 1px solid #e1e4e6;
-        &:after{
-            @include clear;
-        }
-        a{
-            display: block;
-            float: left;
-            width: 50%;
-            height: 56px;
-            line-height: 56px;
-            @include boxsizing;
-            font-size: 17px;
-            font-weight: bold;
-            color: #475377;
-          
-        }
-        .btn_ly_confirm{
-            color: #ff5a5c;
-            border-left: 1px solid #e1e4e6;
+        margin-top: 40px;
+        .btn_popup{
+            width: 100%;
+            height: 52px;
+            @include borderadius(26px);
+            background-color: #5c6073;
+            line-height: 52px;
+            span{
+                font-size: 17px;
+                font-weight: 700;
+                letter-spacing: -0.5px;
+                color: #fff;
+              
+            }
         }
     }
 

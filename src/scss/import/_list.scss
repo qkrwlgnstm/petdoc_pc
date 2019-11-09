@@ -29,6 +29,49 @@
             letter-spacing: -0.37px;
             color: #5c6073;
         }
+        span.menu_txt{
+            color: #4e5263;
+        }
+        &:after{
+            @include clear;
+        }
+    }
+}
+.tab_area{
+    border-bottom: 1px solid #f8f8f8;
+    .tab_list{
+        text-align: center;
+        .list_item{
+            display: inline-block;
+            min-width: 170px;
+            &.show{
+                .tab_menu{
+                    &:after{
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        width: 100%;
+                        height: 2px;
+                        padding: 0 28px 0 29px;
+                        background-color: #ff5a5c;
+                        transform: translate(-50%, 0);
+                        -webkit-transform: translate(-50%, 0);
+                        -moz-transform: translate(-50%, 0);
+                        content: '';
+                    }
+                }
+            }
+        }
+        .tab_menu{
+            position: relative;
+            display: inline-block;
+            height: 48px;
+            line-height: 48px;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: -0.4px;
+            color: #4e5263;
+        }
         &:after{
             @include clear;
         }
@@ -41,27 +84,26 @@
     }
 }
 .card_list{
+    margin: 0 -8px;
     .list_item{
         @include boxsizing;
-        +.list_item{
-            margin-left: 16px;
-        }
     }
     .content_info{
         padding: 8px 2px;
         .info_tit{
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 7px;
             font-size: 12px;
             color: #8d95a0;
             @include ellipse;
         }
         .info_txt{
-            max-height: 33px;
+            max-height: 43px;
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 700;
             color: #4e5263;
             overflow: hidden;
+            line-height: 22px;
             .point_txt{
                 color: #ff5a5c;
             }
@@ -70,6 +112,7 @@
     .list_item{
         float: left;
         width: 216px;
+        margin: 0 8px;
     }
     .like_area{
         display: block;
@@ -81,7 +124,6 @@
             display: inline-block;
             width: 15px;
             height: 14px;
-            margin-top: 3px;
             vertical-align: middle;
         }
         .number{
@@ -103,7 +145,7 @@
     .encyclopedia_content{
         display: block;
         width: 100%;
-        min-height: 288px;
+        min-height: 304px;
     }
     .encyclopedia_content{
         .thumb_img{
@@ -122,16 +164,19 @@
         height: 200px;
     }
     &.search_video_list{
+        margin: 0 -7.5px;
         .list_item{
             float: left;
             width: 294px;
-            +.list_item{
-                margin-left: 15px;
-            }
+            margin: 0 7.5px;
         }
         .video_menu_list{
             .list_item{
                 width: auto;
+                margin: 0;
+                +.list_item{
+                    margin-left: 14px;
+                }
             }
         }
         .video_area_bottom{
@@ -172,12 +217,8 @@
         }
     }
 }
-.pettok_home_detai_section{
-    .pettok_info_area{
-        border-bottom: 1px solid #f8f8f8;
-    }
-}
-.pettok_list, .event_section .pettok_info_area{
+
+.pettok_list{
     .list_item{
         border-bottom: 1px solid #f8f8f8;
         padding: 0 16px;
@@ -319,9 +360,6 @@
         @include clear;
     }
 }
-
-
-
 .encyclopedia_list, .video_list{
     .common-thumb-ic-new{
         position: absolute;
@@ -338,9 +376,12 @@
         z-index: 10;
     }
 }
-.section.event_section .pettok_info_area .pettok_area{
-    height: 69px;
-    padding: 10px 16px 6px;
+
+
+.pettok_info_area .pettok_area{
+    @include layout_table;
+    height: 72px;
+    padding: 10px 16px 9px;
     .thumb_area{
         @include layout_table_cell;
         width: 50px;
@@ -348,45 +389,6 @@
         img{
             width: 50px;
             height: 50px;
-        }
-    }
-}
-.pettok_home_detai_section{
-    .pettok_info_area{
-        border-bottom: 1px solid #f8f8f8;
-    }
-}
-.pettok_list, .event_section .pettok_info_area{
-    .list_item{
-        border-bottom: 1px solid #f8f8f8;
-        padding: 0 16px;
-    }
-    .pettok_area{
-        @include layout_table;
-        height: 71px;
-        padding: 9px 0;
-        @include boxsizing;
-        &.no_thumb_area{
-            padding: 16px 0 14px;
-            .pettok_content{
-                padding: 0;
-                vertical-align: top;
-                @include boxsizing;
-                .content_txt{
-                    margin-bottom: 7px;
-                }
-            }
-        }
-    }
-    .thumb_area{
-        @include layout_table_cell;
-        width: 54px;
-        height: 54px;
-        @include borderadius(4px);
-        img{
-            width: 54px;
-            height: 54px;
-            @include borderadius(4px);
         }
     }
     .pettok_content{
@@ -398,26 +400,9 @@
             font-size: 15px;
             color: #4e5263;
             @include ellipse;
-            .new_symbol{
-                display: inline-block;
-                height: 17px;
-                margin-right: -1px;
-                padding: 0 4px 0;
-                border:1px solid #ff5a5c;
-                line-height: 15px;
-                font-family: Roboto;
-                font-size: 12px;
-                font-weight: 700;
-                color: #ff5a5c;
-                @include boxsizing;
-            }
-            .point_txt{
-                color: #ff5a5c;
-            }
         }
         .content_day{
             display: inline-block;
-            font-size: 0;
             color: #8d95a0;
             .content_info_txt{
                 margin-right: 6px;
@@ -444,11 +429,42 @@
         }
     }
 }
-
-
-
+.reply_input_area{
+    height: 72px;
+    background-color: #f0f0f0;
+    padding: 12px 12px;
+    @include boxsizing;
+    .reply_input_box{
+        position: relative;
+        display: block;
+        height: 48px;
+        background-color: #fff;
+        @include borderadius(4px);
+    }
+    .reply_input_txt_area{
+        padding: 17px 0 0 16px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 0.93;
+        letter-spacing: -0.4px;
+        color: #4e5263;
+    }
+    .chat-detail-btn-send-disable{
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+    }
+}
 .reply_list{
-    .reply_area{
+    .list_item{
+        +.list_item{
+            border-top: 1px solid #f0f2f4;
+        }
+    }
+    .reply_area_box{
         @include layout_table;
         height: 72px;
         padding: 11px 16px;
@@ -490,9 +506,9 @@
     }
     .counseling_content{
         display: block;
-        padding: 15.5px 16px 13px;
+        padding: 15.5px 16px 15px;
         .counseling_content_info{
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             .counseling_tit{
                 display: block;
                 font-size: 15px;
@@ -501,10 +517,10 @@
                 .new_symbol{
                     display: inline-block;
                     height: 17px;
-                    margin-right: -1px;
+                    margin-right: 5px;
                     padding: 0 4px;
                     border:1px solid #ff5a5c;
-                    line-height: 15px;
+                    line-height: 16px;
                     font-family: Roboto;
                     font-size: 12px;
                     font-weight: bold;
@@ -523,14 +539,14 @@
             }
         }
         .counseling_txt{
+            max-height: 44px;
             margin-bottom: 15px;
             font-size: 15px;
             color: #4e5263;  
             overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 3; 
-            -webkit-box-orient: vertical;
+            line-height: 22px;
+            letter-spacing: -0.4px;
+            font-weight: 400;
             .point_txt{
                 font-weight: normal;
                 color: #ff5a5c;
@@ -560,9 +576,10 @@
 }
 .recommend_info_list{
     margin-left: -20px;
+    padding-right: 140px;
     .list_item{
         float: left;
-        margin: 0 0 16px 20px;
+        margin: 0 0 22px 20px;
         &:before{
             display: inline-block;
             width: 4px;
