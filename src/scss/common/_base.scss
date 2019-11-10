@@ -105,4 +105,13 @@ input {
     &::placeholder{
         color: #bcc1c8;
     }
+    &::-webkit-placeholder{
+        color: #bcc1c8;
+    }
+    &::-moz-placeholder{
+        color: #bcc1c8;
+    }
+    &::-ms-placeholder{
+        color: #bcc1c8;
+    }
 }

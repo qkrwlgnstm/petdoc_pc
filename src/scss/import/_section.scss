@@ -3,6 +3,9 @@
 .main_container{
     .section{
         margin-bottom: 42px;
+        .section_info{
+            margin-bottom: 0;
+        }
         &.video_section{
             padding: 0;
             border-bottom: 0;
@@ -73,7 +76,7 @@
     }
     .section.counseling_section{
         &:before{
-            top: 163px;
+            top: 165px;
         }
     }
     .video_section{
@@ -90,7 +93,7 @@
             padding-bottom: 0;
         }
         .video_section{
-            margin-bottom: 60px;
+            margin-bottom: 76px;
         }
         .video_list.search_video_list{
             .video_area_bottom{
@@ -102,7 +105,7 @@
 .pettok_home_container{
     .content_inner{
         position: relative;
-        padding-bottom: 97px;
+        padding-bottom: 100px;
     }
     .section.pettok_section{
         margin-bottom: 60px;
@@ -111,7 +114,14 @@
         margin-bottom: 0;
     }
     .section.detail_list_section{
-        margin-bottom: 0;
+        margin: 29px auto 0;
+        .pettok_info_area{
+            margin: -21px 0 6px;
+            border-bottom: 1px solid #f8f8f8;
+        }
+        .share_layer{
+            bottom: -76px;
+        }
     }
 }
 .page_navi{
@@ -121,6 +131,23 @@
         width: 34px;
         height: 34px;
     }
+    .btn-patination-left-disabled{
+        &.disabled{
+            background: url(../img/sprite.svg) 5.841924398625429% 100% no-repeat;
+        }
+        &.activation{
+            background: url("../img/sprite.svg") 23.367697594501717% 100% no-repeat;
+        }
+    }
+    .btn-patination-right-normal{
+        &.disabled{
+            background: url("../img/sprite.svg") 92.26804123711341% 76.14678899082568% no-repeat;
+        }
+        &.activation{
+            background: url("../img/sprite.svg") 17.52577319587629% 100% no-repeat;
+        }
+    }
+
     .number_list{
         display: inline-block;
         margin: 9px 17px 0;
@@ -370,7 +397,7 @@
         .category_tit_area{      
             .category_tit{
                 display: block;
-                margin-bottom: 8px;
+                margin-bottom: 7px;
                 font-size: 15px;
                 font-weight: 700;
                 color: #4e5263;
@@ -393,6 +420,7 @@
         }
         &.show{
             display: block;
+            padding: 20px 0 15px;
         }
     }
 }
@@ -411,7 +439,7 @@
         }
         .btn_more{
             position: absolute;
-            bottom: 0;
+            bottom: -1px;
             right: 0;
             color: #8d95a0;
             .common-btn-more{
@@ -424,6 +452,15 @@
     }
     .content_list{
         position: relative;
+    }
+    &.encyclopedia_search_section{
+        margin-bottom: 20px;
+    }
+    &.counseling_list_section{
+        margin-bottom: 60px;
+    }
+    &.video_bottom_section{
+        margin-bottom: 18px;
     }
     &.top_section{
         margin-top: 54px;
@@ -477,7 +514,7 @@
             top: 172px;
         }
         .txt_area{
-            padding: 30px 24px 36px;
+            padding: 30px 24px 37px;
             .detail_tit{
                 margin-bottom: 6px;
                 font-size: 24px;
@@ -488,13 +525,12 @@
             }
             .editor_txt{
                 display: block;
-                margin-bottom: 65px;
+                margin-bottom: 60px;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 1.5;
                 color: #8d95a0;   
                 letter-spacing: -0.4px;
-
                 span{
                     font-family: Roboto;
                     letter-spacing: normal;
@@ -519,7 +555,7 @@
                 }
             }
             .detail_list_tit{
-                margin-bottom: 14px;
+                margin: -9px 0 11px;
                 font-size: 19px;
                 font-weight: 700;
                 line-height: 1.26;
@@ -553,7 +589,7 @@
         }
         .sharing_area{
             position: relative;
-            padding: 16px 0 8px;
+            padding: 16px 0 7px;
             border-bottom: 0.5px solid #e1e4e6;
             text-align: right;
             .number{
@@ -686,6 +722,9 @@
                 }
             }
         }
+        .event_area{
+            margin-top: 22px;
+        }        
         .event_share_area{
             position: relative;
             padding: 23px 0 21px;
@@ -699,20 +738,15 @@
                 bottom: -92px;
             }
         }
-
-
-
-
         .video_area{
             position: relative;
             height: 336px;
             background-color: red;
         }
         .video_area_info{
-            overflow: hidden;
             margin: 0 0;
             .info_tit{
-                padding: 20px 0 40px;
+                padding: 20px 0 35px;
                 font-size: 24px;
                 line-height: 1.33;
                 color: #4e5263;
@@ -757,6 +791,12 @@
                     vertical-align: middle;
                 }
             }
+            &:after{
+                @include clear;
+            }
+        }
+        .share_layer{
+            bottom: -117px;
         }
     }
 
@@ -768,7 +808,7 @@
         margin: 0 auto;
         .recommend_content_info{
             position: relative;
-            padding: 17.5px 0 0 24px;
+            padding: 21px 0 0 24px;
             border-bottom: 0.5px solid #e1e4e6;
             .recommend_info{
                 margin-bottom: 11px;
@@ -786,7 +826,7 @@
         }
         .btn_area{
             position: absolute;
-            bottom: 8px;
+            bottom: 7px;
             right: 0;
         }
         .common-btn-share{
@@ -796,7 +836,7 @@
         }
         .btn_recommend{
             float: right;
-            margin: 4px 12px 0 0;
+            margin: 6px 12px 0 0;
             .chat-btn-like-none{
                 display: inline-block;
                 width: 20px;
@@ -874,11 +914,11 @@
                 .counseling_answer_content{
                     @include layout_table_cell;
                     vertical-align: top;
-                    padding: 6px 0 0 10px;
+                    padding: 7px 0 0 10px;
                 }
                 .name_txt{
                     display: block;
-                    margin-bottom: 6px;
+                    margin-bottom: 8px;
                     font-weight: normal;
                     font-size: 15px;
                     color: #4e5263;
@@ -911,10 +951,10 @@
     .share_layer{
         display: none;
         position: absolute;
-        bottom: -106px;
+        bottom: -107px;
         right: 0;
         width: 342px;
-        padding: 19px 22px 18px 20px;
+        padding: 18px 22px 18px 20px;
         box-shadow: 0 5px 20px 0 rgba(78, 82, 99, 0.15);
         background-color: #ffffff;
         @include borderadius(8px);
@@ -922,7 +962,7 @@
         text-align: left;
         z-index: 5;
         .layer_info{
-            margin-bottom: 9px;
+            margin-bottom: 10px;
             .layer_tit{
                 font-size: 16px;
                 font-weight: 700;

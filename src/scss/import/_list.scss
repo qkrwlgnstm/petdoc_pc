@@ -4,9 +4,9 @@
     box-shadow: 0 0.5px 0 0 #e1e4e6;
     .page_info_list{
         width: 912px;
-        height: 41px;
+        height: 42px;
         margin: 0 auto;
-        line-height: 41px;
+        line-height: 42px;
         @include boxsizing;
         .list_item{
             float: left;
@@ -16,7 +16,7 @@
                     display: inline-block;
                     width: 16px;
                     height: 16px;
-                    margin: -2px 6px 0 0;
+                    margin: -2px 5px 0 0;
                     background: url("../img/sprite.svg") 92.66666666666667% 66.3768115942029% no-repeat;
                     vertical-align: middle;
                     content:'';
@@ -92,7 +92,7 @@
         padding: 8px 2px;
         .info_tit{
             display: block;
-            margin-bottom: 7px;
+            margin-bottom: 4px;
             font-size: 12px;
             color: #8d95a0;
             @include ellipse;
@@ -124,7 +124,7 @@
             display: inline-block;
             width: 15px;
             height: 14px;
-            vertical-align: middle;
+            vertical-align: -6px;
         }
         .number{
             display: inline-block;
@@ -145,7 +145,7 @@
     .encyclopedia_content{
         display: block;
         width: 100%;
-        min-height: 304px;
+        min-height: 300px;
     }
     .encyclopedia_content{
         .thumb_img{
@@ -168,7 +168,7 @@
         .list_item{
             float: left;
             width: 294px;
-            margin: 0 7.5px;
+            margin: 0 7.5px 23px;
         }
         .video_menu_list{
             .list_item{
@@ -180,7 +180,7 @@
             }
         }
         .video_area_bottom{
-            padding: 16px 2px 40px;
+            padding: 12px 2px 40px;
         }
         &:after{
             @include clear;
@@ -217,7 +217,6 @@
         }
     }
 }
-
 .pettok_list{
     .list_item{
         border-bottom: 1px solid #f8f8f8;
@@ -307,33 +306,24 @@
         }
     }
 }
-
 .keyword_list{
-    padding: 0 12px 12px;
+    padding: 0 11px 9px;
     .list_item{
         float: left;
         margin: 6px 4px;
         .keyword{
             position: relative;
             display: block;
-            min-width: 48px;
+            min-width: 46px;
             height: 36px;
-            padding: 0 8px;
-            line-height: 36px;
+            padding: 0 10px 0 9px;
+            line-height: 34px;
             border: 0.5px solid #fff;
             @include boxsizing;
             color: #4e5263;
             text-align: center;
-            &:before{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 35px;
-                border: 0.5px solid #c9cdd3;
-                @include borderadius(6px);
-                content:'';
-            }
+            border: 0.5px solid #c9cdd3;
+            @include borderadius(6px);
         }
     }
     &:after{
@@ -376,8 +366,6 @@
         z-index: 10;
     }
 }
-
-
 .pettok_info_area .pettok_area{
     @include layout_table;
     height: 72px;
@@ -506,7 +494,7 @@
     }
     .counseling_content{
         display: block;
-        padding: 15.5px 16px 15px;
+        padding: 19.5px 16px 15px;
         .counseling_content_info{
             margin-bottom: 6px;
             .counseling_tit{
@@ -540,7 +528,7 @@
         }
         .counseling_txt{
             max-height: 44px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-size: 15px;
             color: #4e5263;  
             overflow: hidden;

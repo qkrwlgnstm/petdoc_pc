@@ -25,7 +25,7 @@
             left: 0;
             width: 100%;
             height: 339px;
-            padding: 20px 20px;
+            padding: 18px 20px 20px;
             @include boxsizing;
             border-top-left-radius: 14px;
             -webkit-border-top-left-radius: 14px;
@@ -155,7 +155,7 @@
         }
     }
     .video_area_bottom{
-        padding: 16px 20px 24px;
+        padding: 13px 20px 24px;
         @include boxsizing;
         .bottom_tit{
             display: block;
@@ -235,11 +235,11 @@
     .counseling_content{
         display: block;
         height: 226px;
-        padding: 14px 14px 9px;
+        padding: 16px 14px 9px;
         @include boxsizing;
         .counseling_day{
             display: block;
-            margin-bottom: 9px;
+            margin-bottom: 8px;
             font-size: 12px;
             color: #8d95a0;
             .number{
@@ -257,15 +257,16 @@
             .new_symbol{
                 display: inline-block;
                 height: 17px;
-                margin-right: 7px;
-                padding: 0.5px 4px 0;
+                margin-right: 6px;
+                padding: 0 4px 0;
                 border:1px solid #ff5a5c;
-                line-height: 15px;
+                line-height: 16px;
                 font-family: Roboto;
                 font-size: 12px;
-                font-weight: bold;
+                font-weight: 700;
                 color: #ff5a5c;
                 @include boxsizing;
+                letter-spacing: normal;
                 vertical-align: 1px;
             }
             .point_txt{
@@ -275,7 +276,7 @@
         }
         .recommend_area{
             position: absolute;
-            bottom: 14px;
+            bottom: 13px;
             left: 12px;         
             .btn_recommend{
                 font-size: 0;
@@ -447,7 +448,7 @@
         height: 600px;
     }
     .swiper-pagination{
-        bottom: 35px !important;
+        bottom: 33px !important;
         .swiper-pagination-bullet{
             overflow: hidden;
             width: 8px;
@@ -463,7 +464,7 @@
     }
     .common-btn-share{
         position: absolute;
-        top: 616px;
+        top: 615px;
         right: 0;
         z-index: 10;
         width: 34px;

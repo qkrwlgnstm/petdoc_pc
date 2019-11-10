@@ -5,7 +5,6 @@
         <title>홈</title>
         <link rel="stylesheet" type="text/css" href="css/services.css">
         <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-        <link rel="stylesheet" type="text/css" href="css/sprite.css">
         <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     </head>
@@ -46,129 +45,131 @@
                                 <a href="#" class="menu_txt">펫톡</a>
                             </li>
                         </ul>
-                        <div class="search_box">
-                            <button type="button" class="common-ic-input-search">
-                                <span class="blind">검색 버튼 이미지</span>
-                            </button>
-                            <input name="search" type="text" title="검색어 입력" class="input_text" placeholder="검색하실 내용을 입력해주세요." value="">
-                            <!-- [D] 많이 검색된 검색어 노출시 show 클래스 추가 -->
-                            <div class="keyword_layer ">
-                                <div class="section_info">
-                                    <strong class="section_tit">많이 검색된 검색어</strong>
+                        <div class="header_right_con">
+                            <div class="search_box">
+                                <button type="button" class="common-ic-input-search">
+                                    <span class="blind">검색 버튼 이미지</span>
+                                </button>
+                                <input name="search" type="text" title="검색어 입력" class="input_text" placeholder="검색하실 내용을 입력해주세요." value="">
+                                <!-- [D] 많이 검색된 검색어 노출시 show 클래스 추가 -->
+                                <div class="keyword_layer ">
+                                    <div class="section_info">
+                                        <strong class="section_tit">많이 검색된 검색어</strong>
+                                    </div>
+                                    <ul class="keyword_list">
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                고양이
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                강아지
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                구토
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                중성화
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                분리불안
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                설사
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                슬개골
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                케어
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                사료
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                눈
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                양치
+                                            </a>
+                                        </li>
+                                        <li class="list_item">
+                                            <a href="#" class="keyword">
+                                                피부
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="keyword_list">
+    
+                                <!-- [D] 자동완성 레이어 노출시 show 클래스 추가 -->
+                                <ul class="autocomplet_list ">
                                     <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            고양이
+                                        <a href="#" class="autocomplet_keyword_area">
+                                            <strong class="point_txt">양치</strong>
                                         </a>
                                     </li>
                                     <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            강아지
+                                        <a href="#" class="autocomplet_keyword_area">
+                                            <strong class="point_txt">양치</strong>하는 방법
                                         </a>
                                     </li>
                                     <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            구토
+                                        <a href="#" class="autocomplet_keyword_area">
+                                            고양이<strong class="point_txt">양치</strong>
                                         </a>
                                     </li>
                                     <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            중성화
-                                        </a>
-                                    </li>
-                                    <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            분리불안
-                                        </a>
-                                    </li>
-                                    <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            설사
-                                        </a>
-                                    </li>
-                                    <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            슬개골
-                                        </a>
-                                    </li>
-                                    <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            케어
-                                        </a>
-                                    </li>
-                                    <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            사료
-                                        </a>
-                                    </li>
-                                    <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            눈
-                                        </a>
-                                    </li>
-                                    <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            양치
-                                        </a>
-                                    </li>
-                                    <li class="list_item">
-                                        <a href="#" class="keyword">
-                                            피부
+                                        <a href="#" class="autocomplet_keyword_area">
+                                            강아지<strong class="point_txt">양치</strong>
                                         </a>
                                     </li>
                                 </ul>
+    
                             </div>
-
-                            <!-- [D] 자동완성 레이어 노출시 show 클래스 추가 -->
-                            <ul class="autocomplet_list ">
-                                <li class="list_item">
-                                    <a href="#" class="autocomplet_keyword_area">
-                                        <strong class="point_txt">양치</strong>
-                                    </a>
-                                </li>
-                                <li class="list_item">
-                                    <a href="#" class="autocomplet_keyword_area">
-                                        <strong class="point_txt">양치</strong>하는 방법
-                                    </a>
-                                </li>
-                                <li class="list_item">
-                                    <a href="#" class="autocomplet_keyword_area">
-                                        고양이<strong class="point_txt">양치</strong>
-                                    </a>
-                                </li>
-                                <li class="list_item">
-                                    <a href="#" class="autocomplet_keyword_area">
-                                        강아지<strong class="point_txt">양치</strong>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <!-- [D] 로그인 시 show 클래스 추가 -->
-                        <div class="login_info ">
-                            <div class="login_button">
-                                <button type="button" class="btn_login">
-                                    <span>소셜 로그인</span>
-                                </button>
-                            </div>
-                            <div class="login_content">  
-                                <button type="button" class="btn_login_txt">
-                                    <span class="user_name">집사 00000</span>
-                                    <span class="common-btn-ic-dropdown-mini-none">
-                                        <span class="blind">화살표 이미지</span>
-                                    </span>
-                                </button>
-                                <!-- [D] 유저네임 버튼 클릭시 show 클래스 추가 -->
-                                <div class="logout_layer ">
-                                    <button type="button" class="btn_logout">
-                                        <span class="btn_txt">로그아웃</span>
-                                        <span class="common-btn-ic-logout">
-                                            <span class="blind">로그아웃 아이콘 이미지</span>
-                                        </span>
+                            <!-- [D] 로그인 시 show 클래스 추가 -->
+                            <div class="login_info show">
+                                <div class="login_button">
+                                    <button type="button" class="btn_login">
+                                        <span>소셜 로그인</span>
                                     </button>
                                 </div>
-                                <a href="#" class="login_txt">페이스북으로 로그인</a>
+                                <div class="login_content">  
+                                    <button type="button" class="btn_login_txt">
+                                        <span class="user_name">집사 00000</span>
+                                        <span class="common-btn-ic-dropdown-mini-none">
+                                            <span class="blind">화살표 이미지</span>
+                                        </span>
+                                    </button>
+                                    <!-- [D] 유저네임 버튼 클릭시 show 클래스 추가 -->
+                                    <div class="logout_layer ">
+                                        <button type="button" class="btn_logout">
+                                            <span class="btn_txt">로그아웃</span>
+                                            <span class="common-btn-ic-logout">
+                                                <span class="blind">로그아웃 아이콘 이미지</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="login_txt">페이스북으로 로그인</a>
+                                </div>
                             </div>
                         </div>
                     </div>
