@@ -1336,6 +1336,91 @@ input {
     width: 34px;
     height: 34px; }
 
+.floating_card {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 405px;
+  height: 144px;
+  padding: 17px 17px;
+  border: 0.5px solid #c9cdd3;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  z-index: 25; }
+  .floating_card:after {
+    display: block;
+    clear: both;
+    content: ''; }
+  .floating_card .thumb_area {
+    position: relative;
+    float: left;
+    width: 110px;
+    height: 110px;
+    margin-right: 17px; }
+    .floating_card .thumb_area img {
+      width: 110px;
+      height: 110px;
+      border-radius: 4px; }
+  .floating_card .floating_card_content {
+    overflow: hidden;
+    color: #4e5263; }
+    .floating_card .floating_card_content .content_tit {
+      display: block;
+      margin: 8px 0 7px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.43px;
+      color: #4e5263; }
+    .floating_card .floating_card_content .content_txt {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: -0.4px; }
+  .floating_card .common-btn-down {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 14px;
+    height: 14px;
+    background: url(../img/common-btn-down.svg) 0 0 no-repeat; }
+  .floating_card.show {
+    display: block;
+    animation-name: floating_card;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; }
+
+@keyframes floating_card {
+  0% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0); }
+  100% {
+    transform: translate(0, -603px);
+    -webkit-transform: translate(0, -603px);
+    -moz-transform: translate(0, -603px); } }
+  .floating_card.down {
+    display: block;
+    animation-name: floating_card_down;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; }
+
+@keyframes floating_card_down {
+  0% {
+    transform: translate(0, -603px);
+    -webkit-transform: translate(0, -603px);
+    -moz-transform: translate(0, -603px); }
+  100% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0); } }
+
 /* _slider.scss */
 .wrap .swiper-slide {
   width: 294px;

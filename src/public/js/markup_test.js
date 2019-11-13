@@ -39,8 +39,23 @@ $(document).ready(function(){
     $('.btn_recommend').click(function(e){
 		$('.btn_recommend').toggleClass("show");
     })
+    $('.common-btn-down').click(function(e){
+        $('.floating_card').toggleClass("down");
+        $('.floating_card').removeClass("show");
+    })
 });
-
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+     //console.log(scroll);
+    if (scroll >= 407) {
+        //console.log('a');
+        $(".floating_card").addClass("show");
+    } else {
+        //console.log('a');
+        $(".floating_card").removeClass("show");
+        $(".floating_card").removeClass("down");
+    }
+});
 $(document).on('click', 'a[href="#"]', function(e){
     e.preventDefault();
 });
