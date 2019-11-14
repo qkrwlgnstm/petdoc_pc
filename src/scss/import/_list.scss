@@ -448,6 +448,7 @@
 }
 .reply_list{
     .list_item{
+        position: relative;
         +.list_item{
             border-top: 1px solid #f0f2f4;
         }
@@ -483,8 +484,19 @@
             }
         }
         .reply_txt{
+            padding-right: 32px;
             color: #4e5263;
+            @include ellipse;
         }
+    }
+    .common-btn-delete{
+        position: absolute;
+        right: 12px;
+        bottom: 15px;
+        width: 24px;
+        height: 24px;
+        background: url(../img/common-btn-delete.svg) 0 0 no-repeat;
+        z-index: 10;
     }
 }
 .counseling_list{

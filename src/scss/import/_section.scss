@@ -122,6 +122,29 @@
         .share_layer{
             bottom: -76px;
         }
+        .detail_img_area{
+            .swipe-btn-left{
+                top: 279px;
+                left: -62px;
+            }
+            .swipe-btn-right{
+                top: 279px;
+                right: -62px;
+            }
+            .button_area{
+                position: relative;
+                text-align: right;
+                margin: 20px 0 0;
+                .common-btn-share{
+                    width: 34px;
+                    height: 34px;
+                }
+                .share_layer{
+                    top: 44px;
+                    bottom: auto;
+                }
+            }
+        }
     }
 }
 .page_navi{

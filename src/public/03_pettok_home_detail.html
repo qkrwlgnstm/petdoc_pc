@@ -213,19 +213,23 @@
                                     <!-- Add Pagination -->
                                     <div class="swiper-pagination"></div>
                                 </div>
-                                <button type="button" class="common-btn-share">
-                                    <span class="blind">공유하기 버튼 이미지</span>
-                                </button>
+                                <div class="swiper-button-prev swipe-btn-left"></div>
+                                <div class="swiper-button-next swipe-btn-right"></div>  
                                 <p class="list_txt">뭔가,,저희 강아지만 그런건가요? 갑자기 조용한 것 같아서 찾아보면 구석에서 웅크리고 있는겁니다. </p>
-                                <!-- [D] URL 복사하기 레이어 노출 시 show 클래스 추가 -->
-                                <div class="share_layer show">
-                                    <div class="layer_info">
-                                        <strong class="layer_tit"><span>URL</span> 복사하기</strong>
-                                    </div>
-                                    <div class="layer_con">
-                                        <div class="share_box">
-                                            <input type="text" class="input_txt" readonly="" value="https://www.petdoc-koreaa…">
-                                            <button type="button" class="btn_copy"><span>복사</span></button>
+                                <div class="button_area">
+                                    <button type="button" class="common-btn-share">
+                                        <span class="blind">공유하기 버튼 이미지</span>
+                                    </button>
+                                    <!-- [D] URL 복사하기 레이어 노출 시 show 클래스 추가 -->
+                                    <div class="share_layer show">
+                                        <div class="layer_info">
+                                            <strong class="layer_tit"><span>URL</span> 복사하기</strong>
+                                        </div>
+                                        <div class="layer_con">
+                                            <div class="share_box">
+                                                <input type="text" class="input_txt" readonly="" value="https://www.petdoc-koreaa…">
+                                                <button type="button" class="btn_copy"><span>복사</span></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -253,6 +257,7 @@
                                                     <span class="number">36</span>초전
                                                 </p>
                                                 <p class="reply_txt">똥이라니,,애정이 부족한 거 아닐까요?</p>
+                                                <button type="button" class="common-btn-delete"><span class="blind">삭제버튼</span></button>
                                             </div>
                                         </a>
                                     </li>
@@ -414,6 +419,10 @@
                     return '<span class="' + className + '">' + (index + 1) + '</span>';
                     },
                 },
+                navigation: {
+                    nextEl: '.swipe-btn-right',
+                    prevEl: '.swipe-btn-left',
+                }
             });
         </script>
     </body>

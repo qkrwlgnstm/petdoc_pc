@@ -442,7 +442,7 @@
 }
 .detail_img_area{
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 24px;
     img{
         width: 600px;
         height: 600px;
@@ -462,14 +462,14 @@
             background-color: rgba(53, 61, 94, 0.5);
         }
     }
-    .common-btn-share{
-        position: absolute;
-        top: 615px;
-        right: 0;
-        z-index: 10;
-        width: 34px;
-        height: 34px;
-    }
+    // .common-btn-share{
+    //     position: absolute;
+    //     top: 615px;
+    //     right: 0;
+    //     z-index: 10;
+    //     width: 34px;
+    //     height: 34px;
+    // }
     .swiper-wrapper{
         padding: 0;
     }

@@ -434,6 +434,22 @@ input {
     border-bottom: 1px solid #f8f8f8; }
   .pettok_home_container .section.detail_list_section .share_layer {
     bottom: -76px; }
+  .pettok_home_container .section.detail_list_section .detail_img_area .swipe-btn-left {
+    top: 279px;
+    left: -62px; }
+  .pettok_home_container .section.detail_list_section .detail_img_area .swipe-btn-right {
+    top: 279px;
+    right: -62px; }
+  .pettok_home_container .section.detail_list_section .detail_img_area .button_area {
+    position: relative;
+    text-align: right;
+    margin: 20px 0 0; }
+    .pettok_home_container .section.detail_list_section .detail_img_area .button_area .common-btn-share {
+      width: 34px;
+      height: 34px; }
+    .pettok_home_container .section.detail_list_section .detail_img_area .button_area .share_layer {
+      top: 44px;
+      bottom: auto; }
 
 .page_navi {
   margin-bottom: 97px;
@@ -1831,7 +1847,7 @@ input {
 
 .detail_img_area {
   position: relative;
-  margin-bottom: 45px; }
+  margin-bottom: 24px; }
   .detail_img_area img {
     width: 600px;
     height: 600px; }
@@ -1847,13 +1863,6 @@ input {
       line-height: 2; }
     .detail_img_area .swiper-pagination .swiper-pagination-bullet-active {
       background-color: rgba(53, 61, 94, 0.5); }
-  .detail_img_area .common-btn-share {
-    position: absolute;
-    top: 615px;
-    right: 0;
-    z-index: 10;
-    width: 34px;
-    height: 34px; }
   .detail_img_area .swiper-wrapper {
     padding: 0; }
   .detail_img_area .swiper-slide {
@@ -2319,8 +2328,10 @@ input {
     width: 34px;
     height: 34px; }
 
-.reply_list .list_item + .list_item {
-  border-top: 1px solid #f0f2f4; }
+.reply_list .list_item {
+  position: relative; }
+  .reply_list .list_item + .list_item {
+    border-top: 1px solid #f0f2f4; }
 
 .reply_list .reply_area_box {
   display: table;
@@ -2360,7 +2371,20 @@ input {
     .reply_list .reply_area_box .reply_info .number {
       font-family: Helvetica; }
   .reply_list .reply_area_box .reply_txt {
-    color: #4e5263; }
+    padding-right: 32px;
+    color: #4e5263;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+
+.reply_list .common-btn-delete {
+  position: absolute;
+  right: 12px;
+  bottom: 15px;
+  width: 24px;
+  height: 24px;
+  background: url(../img/common-btn-delete.svg) 0 0 no-repeat;
+  z-index: 10; }
 
 .counseling_list {
   border-top: 0.5px solid #f8f8f8; }
