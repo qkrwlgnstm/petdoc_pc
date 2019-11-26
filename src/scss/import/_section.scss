@@ -76,7 +76,7 @@
     }
     .section.counseling_section{
         &:before{
-            top: 165px;
+            top: 163px;
         }
     }
     .video_section{
@@ -893,6 +893,7 @@
                 position: relative;
                 margin-bottom: 32px;
                 padding-left: 73px;
+                clear: both;
                 .txt_time_area{
                     float: right;
                     width: 65px;
@@ -1145,11 +1146,13 @@
     }
 }
 .btn_counseling_area{
-    position: absolute;
-    right: 0;
-    bottom: 47px;
+    position: fixed;
+    right: 50%;
+    bottom: 45px;
     width: 74px;
     height: 74px;
+    margin-right: -456px;
+    z-index: 20;
     box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.12);
     background-color: #ff6a6c;  
     @include borderadius(100%);
@@ -1180,11 +1183,13 @@
     }
 }
 .btn_write_area{
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: 50%;
     bottom: 47px;
     width: 74px;
     height: 74px;
+    margin-right: -456px;
+    z-index: 20;
     box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.12);
     background-color: #ff5a5c;  
     @include borderadius(100%);

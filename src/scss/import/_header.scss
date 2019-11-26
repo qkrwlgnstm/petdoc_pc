@@ -138,6 +138,7 @@
         }
         .login_content{
             position: relative;
+            min-width: 99px;
             text-align: right;
             display: none;
             .btn_login_txt{
@@ -168,7 +169,7 @@
                 position: absolute;
                 top: 19px;
                 left: 0;
-                padding: 10px 4px 10px 15px;
+                padding: 10px 7px 10px 15px;
                 box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.12);
                 border: 1px solid #f0f2f4;
                 background-color: #fff;
@@ -210,7 +211,8 @@
     }
 }
 .autocomplet_list{
-    display: none;;
+    display: none;
+    overflow: hidden;
     position: absolute;
     top: 44px;
     left: 0;
@@ -231,6 +233,9 @@
             font-weight: 400;
             letter-spacing: -0.4px;
             color: #4e5263;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.03);
+            }
             .point_txt{
                 color: #ff5a5c;
                 font-weight: normal;
