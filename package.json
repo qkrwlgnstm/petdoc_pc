@@ -24,7 +24,7 @@
     "gulp-util": "^3.0.8",
     "gulp.spritesmith": "^6.9.0",
     "htmlhint-stylish": "^1.0.3",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "scrollmagic": "^2.0.5"
   },
   "dependencies": {}
